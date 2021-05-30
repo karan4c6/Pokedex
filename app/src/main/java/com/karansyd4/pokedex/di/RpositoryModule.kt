@@ -1,4 +1,4 @@
-package com.karansyd4.pokedex.network.di
+package com.karansyd4.pokedex.di
 
 import dagger.Module
 import dagger.hilt.InstallIn

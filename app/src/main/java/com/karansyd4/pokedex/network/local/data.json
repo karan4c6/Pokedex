@@ -1,0 +1,4719 @@
+{
+  "status": 200,
+  "data": {
+    "pokedex": [
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Ivysaur",
+        "number": 2,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Venasaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Venasaur",
+        "number": 3,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      },
+      {
+        "name": "Bulbasaur",
+        "number": 1,
+        "imageUrl": "",
+        "type": {
+          "type1": "GRASS",
+          "type2": "POISON"
+        },
+        "stats": {
+          "cp": 100,
+          "hp": 200
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Ivysaur",
+          "evolveToNumber": 2
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Vine Whip",
+          "charge": "Sludge Bomb",
+          "special": "Solar Beam"
+        },
+        "fight": {
+          "effectiveType": {
+            "type1": "Fairy",
+            "type2": "Electric",
+            "type3": "Ghost"
+          },
+          "weakType": {
+            "type1": "Water",
+            "type2": "Fighting"
+          }
+        }
+      }
+    ]
+  }
+}

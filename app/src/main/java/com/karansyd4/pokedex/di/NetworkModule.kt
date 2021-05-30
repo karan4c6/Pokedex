@@ -1,4 +1,4 @@
-package com.karansyd4.pokedex.network.di
+package com.karansyd4.pokedex.di
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -14,6 +14,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
+
     @Singleton
     @Provides
     fun provideGsonBuilder(): Gson {
