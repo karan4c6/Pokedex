@@ -6,5 +6,5 @@ import retrofit2.http.GET
 interface PokedexService {
 
     @GET("main/pokedex.json")
-    suspend fun get(): PokedexData
+    suspend fun getPokedexData(): PokedexData
 }

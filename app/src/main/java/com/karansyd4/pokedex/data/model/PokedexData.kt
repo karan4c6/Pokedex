@@ -1,11 +1,16 @@
 package com.karansyd4.pokedex.data.model
 
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 
 @Serializable
 data class PokedexData(
+
+    @SerialName("data")
     val data: Data,
+
+    @SerialName("status")
     val status: Int
 )
 

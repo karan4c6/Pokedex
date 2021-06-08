@@ -16,16 +16,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-/*
-    @Singleton
-    @Provides
-    fun provideGsonBuilder(): Gson {
-        return GsonBuilder()
-            .excludeFieldsWithoutExposeAnnotation()
-            .create()
-    }
-*/
-
     @Singleton
     @Provides
     fun provideRetrofit(): Retrofit.Builder {
@@ -33,7 +23,6 @@ object NetworkModule {
         return Retrofit.Builder()
             .baseUrl(API_BASE_URL)
             .addConverterFactory(Json.asConverterFactory(contentType))
-//            .addConverterFactory(GsonConverterFactory.create(gson))
     }
 
     @Singleton

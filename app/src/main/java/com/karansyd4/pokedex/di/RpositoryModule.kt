@@ -21,5 +21,4 @@ object RepositoryModule {
     ): PokedexRepository {
         return PokedexRepository(pokedexDAO, pokedexService)
     }
-
 }
