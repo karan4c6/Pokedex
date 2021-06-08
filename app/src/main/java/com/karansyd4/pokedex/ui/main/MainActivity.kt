@@ -1,10 +1,10 @@
-package com.karansyd4.pokedex
+package com.karansyd4.pokedex.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
+import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.databinding.MainActivityBinding
-import com.karansyd4.pokedex.ui.main.MainFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

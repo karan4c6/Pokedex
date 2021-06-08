@@ -1,4 +1,4 @@
-package com.karansyd4.pokedex.network.model
+package com.karansyd4.pokedex.data.model
 
 data class PokedexData(
     val data: Data,

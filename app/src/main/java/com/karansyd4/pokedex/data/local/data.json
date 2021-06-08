@@ -5,7 +5,7 @@
       {
         "name": "Bulbasaur",
         "number": 1,
-        "imageUrl": "",
+        "imageUrl": "https://pokeres.bastionbot.org/images/pokemon/1.png",
         "type": {
           "type1": "GRASS",
           "type2": "POISON"
