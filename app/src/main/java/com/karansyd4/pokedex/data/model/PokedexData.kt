@@ -1,25 +1,20 @@
 package com.karansyd4.pokedex.data.model
 
+import kotlinx.serialization.Serializable
+
+
+@Serializable
 data class PokedexData(
     val data: Data,
     val status: Int
 )
 
+@Serializable
 data class Data(
     val pokedex: List<Pokedex>
 )
 
-data class EffectiveType(
-    val type1: String,
-    val type2: String,
-    val type3: String
-)
-
-data class Fight(
-    val effectiveType: EffectiveType,
-    val weakType: WeakType
-)
-
+@Serializable
 data class Pokedex(
     val bestMoveset: BestMoveset,
     val buddy: Buddy,
@@ -32,21 +27,25 @@ data class Pokedex(
     val type: Type
 )
 
+@Serializable
 data class Stats(
     val cp: Int,
     val hp: Int
 )
 
+@Serializable
 data class Type(
     val type1: String,
     val type2: String
 )
 
+@Serializable
 data class WeakType(
     val type1: String,
     val type2: String
 )
 
+@Serializable
 data class Evolution(
     val candy: Int,
     val evolveToName: String,
@@ -54,12 +53,27 @@ data class Evolution(
     val mega: Boolean
 )
 
+@Serializable
 data class BestMoveset(
     val charge: String,
     val fast: String,
     val special: String
 )
 
+@Serializable
 data class Buddy(
     val candyKm: Int
+)
+
+@Serializable
+data class EffectiveType(
+    val type1: String,
+    val type2: String,
+    val type3: String
+)
+
+@Serializable
+data class Fight(
+    val effectiveType: EffectiveType,
+    val weakType: WeakType
 )
