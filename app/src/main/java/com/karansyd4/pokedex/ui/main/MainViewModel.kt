@@ -19,7 +19,6 @@ class MainViewModel @Inject constructor(
 ) : ViewModel() {
 
     private val _pokedexData: MutableLiveData<Result<List<Pokedex>>> = MutableLiveData()
-
     val pokedexData: LiveData<Result<List<Pokedex>>>
         get() = _pokedexData
 

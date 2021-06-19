@@ -1,6 +1,7 @@
 package com.karansyd4.pokedex.ui.main
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,6 +16,7 @@ class MainFragment : Fragment() {
 
     companion object {
         fun newInstance() = MainFragment()
+        private const val TAG = "MainFragment_Kar"
     }
 
     private lateinit var binding: MainFragmentBinding
@@ -40,19 +42,30 @@ class MainFragment : Fragment() {
     private fun observePokedexData() {
         viewModel.pokedexData.observe(viewLifecycleOwner, { result ->
             when (result) {
-                is Result.Success<List<Pokedex>> -> {
-                    displayLoading(false)
-                    populateRecyclerView(result.data)
-                }
                 is Result.Loading -> {
+                    Log.d(TAG, "observePokedexData: LOADING")
                     displayLoading(true)
                 }
+                is Result.Success<List<Pokedex>> -> {
+                    Log.d(TAG, "observePokedexData: Success")
+                    displayLoading(false)
+                    displayData(result.data)
+                }
                 is Result.Error -> {
+                    Log.d(TAG, "observePokedexData: ERROR")
                     displayLoading(false)
                     displayError(result.exception.message)
                 }
+                else -> displayError("Something went wrong")
             }
         })
+    }
+
+    private fun displayData(data: List<Pokedex>) {
+        Log.d(TAG, "displayData: pokedex list size: ${data.size}")
+        data.forEach {
+            Log.d(TAG, "displayData: \t${it.number}:${it.name} - ${it.type}")
+        }
     }
 
     private fun displayError(message: String?) {

@@ -1,10 +1,10 @@
 package com.karansyd4.pokedex.data.repository
 
 import android.util.Log
-import com.karansyd4.pokedex.data.NetworkUtil.NETWORK_OK
 import com.karansyd4.pokedex.data.local.PokedexDAO
 import com.karansyd4.pokedex.data.model.Pokedex
 import com.karansyd4.pokedex.data.model.Result
+import com.karansyd4.pokedex.data.model.Result.Companion.NETWORK_OK
 import com.karansyd4.pokedex.data.remote.PokedexService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -24,7 +24,10 @@ class PokedexRepository constructor(
 
             if (pokedexData.status == NETWORK_OK) {
                 // do db insert operation here
-                Log.d(TAG, "getPokedex: ${pokedexData.data.pokedex[0].name}")
+//                Log.d(TAG, "getPokedex: ${pokedexData.data.pokedex[0].name}")
+                pokedexData.data.pokedex.forEach {
+                    Log.d(TAG, "getPokedex: name: ${it.name}")
+                }
             } else {
                 // error status
             }
@@ -32,9 +35,11 @@ class PokedexRepository constructor(
             // fetch data from db
 //            val cachedPokedexData = blogDao.get()
 
-            emit(Result.Success(pokedexData.data as List<Pokedex>))
+            emit(Result.Success(pokedexData.data.pokedex as List<Pokedex>))
         } catch (e: Exception) {
-            emit(Result.Error(e))
+            Log.e(TAG, "getPokedex: error Message: ${e.message}")
+            Log.e(TAG, "getPokedex: error: ${e.printStackTrace()}")
+            emit(Result.InvalidResponseError(e))
         }
     }
 }

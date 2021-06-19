@@ -28,7 +28,7 @@ data class Pokedex(
     val name: String,
     val number: Int,
     val stats: Stats,
-    val type: Type
+    val type: List<String>
 )
 
 @Serializable
@@ -38,30 +38,19 @@ data class Stats(
 )
 
 @Serializable
-data class Type(
-    val type1: String,
-    val type2: String
-)
-
-@Serializable
-data class WeakType(
-    val type1: String,
-    val type2: String
-)
-
-@Serializable
 data class Evolution(
-    val candy: Int,
-    val evolveToName: String,
-    val evolveToNumber: Int,
-    val mega: Boolean
+    val candy: Int? = null,
+    val evolveToName: String? = null,
+    val evolveToNumber: Int? = null,
+    val mega: Boolean,
+    val megaCP: Int? = null
 )
 
 @Serializable
 data class BestMoveset(
     val charge: String,
     val fast: String,
-    val special: String
+    val special: String? = null
 )
 
 @Serializable
@@ -70,14 +59,6 @@ data class Buddy(
 )
 
 @Serializable
-data class EffectiveType(
-    val type1: String,
-    val type2: String,
-    val type3: String
-)
-
-@Serializable
 data class Fight(
-    val effectiveType: EffectiveType,
-    val weakType: WeakType
+    val weakToType: List<String>
 )
