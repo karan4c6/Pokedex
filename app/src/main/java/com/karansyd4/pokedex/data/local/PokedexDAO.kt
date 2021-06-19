@@ -5,7 +5,6 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
-import com.karansyd4.pokedex.data.model.Pokedex
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -17,7 +16,7 @@ interface PokedexDAO {
      */
     @Transaction
     @Query("SELECT * FROM pokedex_table ORDER BY id")
-    suspend fun getPokedex(): Flow<List<Pokedex>>
+    fun getPokedex(): Flow<List<PokedexEntity>>
 
     /**
      * Get Pokedex item by Pokedex number
@@ -25,7 +24,7 @@ interface PokedexDAO {
      */
     @Transaction
     @Query("SELECT * FROM pokedex_table WHERE id =:number")
-    suspend fun getPokedexByNumber(number: Int): Pokedex
+    suspend fun getPokedexByNumber(number: Int): PokedexEntity
 
     /**
      *Get all pokedex item
@@ -40,7 +39,7 @@ interface PokedexDAO {
      * @param pokedexItemList inserted into pokedex database
      */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAllPokedexItem(pokedexItemList: List<Pokedex>)
+    fun insertAllPokedexItem(pokedexItemList: List<PokedexEntity>)
 
     /**
      * Delete all Pokedex data
