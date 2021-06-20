@@ -90,3 +90,15 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+
+.DS_Store
+.DS_Store 
+views/.DS_Store 
+views/src/.DS_Store 
+views/src/main/.DS_Store 
+app/src/main/res/.DS_Store 
+app/src/.DS_Store 
+app/src/main/.DS_Store 
+app/.DS_Store
+

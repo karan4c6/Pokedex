@@ -5,7 +5,7 @@
       {
         "name": "Bulbasaur",
         "number": 1,
-        "imageUrl": "https://pokeres.bastionbot.org/images/pokemon/1.png",
+        "imageUrl": "https://raw.githubusercontent.com/karan4c6/APIs/main/pokedex/images/001.jpg",
         "type": [
           "GRASS",
           "POISON"
@@ -40,7 +40,7 @@
       {
         "name": "Ivysaur",
         "number": 2,
-        "imageUrl": "https://pokeres.bastionbot.org/images/pokemon/2.png",
+        "imageUrl": "https://raw.githubusercontent.com/karan4c6/APIs/main/pokedex/images/002.jpg",
         "type": [
           "GRASS",
           "POISON"
@@ -75,7 +75,7 @@
       {
         "name": "Venasaur",
         "number": 3,
-        "imageUrl": "https://pokeres.bastionbot.org/images/pokemon/3.png",
+        "imageUrl": "https://raw.githubusercontent.com/karan4c6/APIs/main/pokedex/images/003.jpg",
         "type": [
           "GRASS",
           "POISON"

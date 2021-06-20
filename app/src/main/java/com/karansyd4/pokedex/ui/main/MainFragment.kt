@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
+import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.model.Pokedex
 import com.karansyd4.pokedex.data.model.Result
 import com.karansyd4.pokedex.databinding.MainFragmentBinding
@@ -22,6 +24,8 @@ class MainFragment : Fragment() {
     private lateinit var binding: MainFragmentBinding
 
     private lateinit var viewModel: MainViewModel
+
+    private lateinit var pokedexAdapter: PokedexAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,7 +47,7 @@ class MainFragment : Fragment() {
             when (result) {
                 is Result.Loading -> {
                     Log.d(TAG, "observePokedexData: LOADING")
-                    displayLoading(true)
+                    displayLoading()
                 }
                 is Result.Success<List<Pokedex>> -> {
                     Log.d(TAG, "observePokedexData: Success")
@@ -62,9 +66,23 @@ class MainFragment : Fragment() {
 
     private fun displayData(data: List<Pokedex>) {
         Log.d(TAG, "displayData: pokedex list size: ${data.size}")
-        data.forEach {
-            Log.d(TAG, "displayData: \t${it.number}:${it.name} - ${it.type}")
+        pokedexAdapter = PokedexAdapter(getPokedexCards(data))
+        binding.pokemonList.apply {
+            adapter = pokedexAdapter
+            layoutManager = GridLayoutManager(context, 2)
+            addItemDecoration(PokedexItemOffsetDecoration(itemOffset = R.dimen.default_offset))
         }
+    }
+
+    private fun getPokedexCards(data: List<Pokedex>) = data.map {
+        PokedexCardVO(data = it, onClickListener = ::cardClickListener)
+    }
+
+    /**
+     * Click Listener for Pokedex Card Item Click
+     */
+    private fun cardClickListener(pokedexCardVO: PokedexCardVO) {
+        Log.d(TAG, "cardClickListener: Number Clicked: ${pokedexCardVO.data.number}")
     }
 
     private fun displayError(message: String?) {
@@ -75,19 +93,8 @@ class MainFragment : Fragment() {
         }
     }
 
-    private fun displayLoading(isLoading: Boolean) {
-//        swipeRefreshLayout.isRefreshing = isLoading
+    private fun displayLoading(isLoading: Boolean = true) {
+        // todo
     }
 
-    private fun populateRecyclerView(pokedexList: List<Pokedex>) {
-//        if (!pokedexList.isNullOrEmpty()) adapter.setItems(ArrayList(pokedexList))
-    }
-
-    private fun setupRecyclerView() {
-/*
-        adapter = BlogAdapter(this)
-        blog_recyclerview.layoutManager = LinearLayoutManager(this)
-        blog_recyclerview.adapter = adapter
-*/
-    }
 }

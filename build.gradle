@@ -11,6 +11,7 @@ buildscript {
         retrofitVersion = "2.9.0"
         kotlinSerializationPlugin = "1.4.21"
         kotlinSerialization = "1.0.1"
+        coilVersion = "1.2.2"
     }
 
     repositories {
