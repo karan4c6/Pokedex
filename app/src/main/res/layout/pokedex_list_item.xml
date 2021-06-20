@@ -8,15 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/saw"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sample"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <com.karansyd4.pokedex.views.BubbleTextView
+        <com.karansyd4.pokedex.BubbleTextView
             android:id="@+id/pokemonName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
