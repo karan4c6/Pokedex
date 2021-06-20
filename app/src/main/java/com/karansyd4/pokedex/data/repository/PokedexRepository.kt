@@ -35,7 +35,7 @@ class PokedexRepository constructor(
             // fetch data from db
 //            val cachedPokedexData = blogDao.get()
 
-            emit(Result.Success(pokedexData.data.pokedex as List<Pokedex>))
+            emit(Result.Success(pokedexData.data.pokedex))
         } catch (e: Exception) {
             Log.e(TAG, "getPokedex: error Message: ${e.message}")
             Log.e(TAG, "getPokedex: error: ${e.printStackTrace()}")
