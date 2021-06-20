@@ -19,14 +19,14 @@ class BubbleTextView @JvmOverloads constructor(
         with(typedArray) {
             try {
                 bubbleText = getString(R.styleable.BubbleTextView_bubbleText)
-                updateLayout(bubbleText, context)
+                updateLayout(bubbleText)
             } finally {
                 recycle()
             }
         }
     }
 
-    private fun updateLayout(bubbleText: String?, context: Context) {
+    private fun updateLayout(bubbleText: String?) {
         binding.bubbleText.text = bubbleText
     }
 }

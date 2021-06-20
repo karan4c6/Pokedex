@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId "com.karansyd4.pokedex"
-        minSdkVersion 22
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -53,6 +53,7 @@ android {
 
 dependencies {
 
+    implementation(project(path: ":views"))
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
     implementation 'androidx.core:core-ktx:1.5.0'
     implementation 'androidx.appcompat:appcompat:1.3.0'

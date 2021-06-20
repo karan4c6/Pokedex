@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".ui.main.MainFragment">
 
-    <com.karansyd4.pokedex.BubbleTextView
+    <com.karansyd4.pokedex.views.BubbleTextView
         android:id="@+id/pokemonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

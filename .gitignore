@@ -55,6 +55,7 @@ captures/
 .idea/jarRepositories.xml
 .idea/codeStyles/Project.xml
 .idea/sonarlint/issuestore/index.pb
+.idea/*
 
 # Keystore files
 # Uncomment the following lines if you do not want to check your keystore files in.
