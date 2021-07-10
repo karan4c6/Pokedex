@@ -6,13 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.model.Pokedex
 import com.karansyd4.pokedex.data.model.Result
-import com.karansyd4.pokedex.databinding.PokedexFragmentBinding
+import com.karansyd4.pokedex.databinding.FragmentPokedexListBinding
 
 class PokedexListFragment : Fragment() {
 
@@ -21,7 +23,7 @@ class PokedexListFragment : Fragment() {
         private const val TAG = "PokedexListFragment_Kar"
     }
 
-    private lateinit var binding: PokedexFragmentBinding
+    private lateinit var binding: FragmentPokedexListBinding
 
     private lateinit var viewModel: PokedexViewModel
 
@@ -32,7 +34,7 @@ class PokedexListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         Log.d(TAG, "onCreateView: ")
-        binding = PokedexFragmentBinding.inflate(LayoutInflater.from(context))
+        binding = FragmentPokedexListBinding.inflate(LayoutInflater.from(context))
         return binding.root
     }
 
@@ -85,7 +87,10 @@ class PokedexListFragment : Fragment() {
      */
     private fun cardClickListener(pokedexCardVO: PokedexCardVO) {
         Log.d(TAG, "cardClickListener: Number Clicked: ${pokedexCardVO.data.number}")
-        viewModel.loadPokedexEntryForNumber(pokedexCardVO.data.number)
+        findNavController().navigate(
+            R.id.action_pokedexListFragment_to_pokedexDetailFragment,
+            bundleOf(getString(R.string.arg_pokedex_number) to pokedexCardVO.data.number)
+        )
     }
 
     private fun displayError(message: String?) {

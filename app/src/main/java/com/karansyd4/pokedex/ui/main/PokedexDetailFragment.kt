@@ -10,31 +10,29 @@ import androidx.lifecycle.ViewModelProvider
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.model.Pokedex
 import com.karansyd4.pokedex.data.model.Result
-import com.karansyd4.pokedex.databinding.PokedexDetailBinding
+import com.karansyd4.pokedex.databinding.FragmentPokedexDetailBinding
 import com.karansyd4.pokedex.util.Util.ZERO
 
 class PokedexDetailFragment : Fragment() {
 
     companion object {
-        fun newInstance() = PokedexDetailFragment()
         private const val TAG = "PokedexDetailFrag_Kar"
-        private const val ARG_POKEDEX_NUMBER = "pokedexNumber"
     }
 
-    private lateinit var binding: PokedexDetailBinding
+    private lateinit var binding: FragmentPokedexDetailBinding
 
     private lateinit var viewModel: PokedexViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         Log.d(TAG, "onCreateView: ")
-        binding = PokedexDetailBinding.inflate(LayoutInflater.from(context))
+        binding = FragmentPokedexDetailBinding.inflate(LayoutInflater.from(context))
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(requireActivity()).get(PokedexViewModel::class.java)
-        viewModel.loadPokedexEntryForNumber(arguments?.getInt(ARG_POKEDEX_NUMBER) ?: ZERO)
+        viewModel.loadPokedexEntryForNumber(arguments?.getInt(getString(R.string.arg_pokedex_number)) ?: ZERO)
         observePokedexDetailData()
     }
 
