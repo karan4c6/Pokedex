@@ -21,12 +21,12 @@ sealed class Result<out R> {
     /**
      * Server / Network Error
      */
-    data class NetworkError(val exception: Exception) : Result<Nothing>()
+    data class NetworkError<out T>(val cacheData: T) : Result<T>()
 
     /**
      * General Error
      */
-    data class Error(val exception: Exception) : Result<Nothing>()
+    data class Error(val message: String) : Result<Nothing>()
 
     /**
      * When Json Syntax Error Happens

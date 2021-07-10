@@ -11,7 +11,7 @@ data class PokedexEntity(
     @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name = "id")
-    val id: Int,
+    val id: Int = 0,
 
     @ColumnInfo(name = "image_url")
     val imageUrl: String,

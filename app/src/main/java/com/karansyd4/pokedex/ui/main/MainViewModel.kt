@@ -22,7 +22,7 @@ class MainViewModel @Inject constructor(
     val pokedexData: LiveData<Result<List<Pokedex>>>
         get() = _pokedexData
 
-    fun setStateEvent(mainStateEvent: MainStateEvent) {
+    fun loadData(mainStateEvent: MainStateEvent) {
         viewModelScope.launch {
             when (mainStateEvent) {
                 is MainStateEvent.GetPokedexEvents -> {

@@ -31,14 +31,16 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        Log.d(TAG, "onCreateView: ")
         binding = MainFragmentBinding.inflate(LayoutInflater.from(context))
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        Log.d(TAG, "onViewCreated: ")
         viewModel = ViewModelProvider(requireActivity()).get(MainViewModel::class.java)
-        viewModel.setStateEvent(MainStateEvent.GetPokedexEvents)
+        viewModel.loadData(MainStateEvent.GetPokedexEvents)
         observePokedexData()
     }
 
@@ -57,7 +59,7 @@ class MainFragment : Fragment() {
                 is Result.Error -> {
                     Log.d(TAG, "observePokedexData: ERROR")
                     displayLoading(false)
-                    displayError(result.exception.message)
+                    displayError(result.message)
                 }
                 else -> displayError("Something went wrong")
             }
