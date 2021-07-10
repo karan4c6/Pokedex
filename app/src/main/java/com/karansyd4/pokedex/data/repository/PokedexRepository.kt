@@ -19,11 +19,26 @@ class PokedexRepository constructor(
 
     private val TAG = "PokedexRepository_Kar"
 
+    suspend fun getPokedexSize() {
+        pokedexDAO.getPokedexSize()
+    }
+
+    fun getAllPokedexDbData() = try {
+        Result.Success(pokedexDAO.getPokedex())
+    } catch (e: Exception) {
+        Result.DatabaseError("Error fetching all Pokedex Db Data")
+    }
+
+    fun getPokedexDbData(number: Int) = try {
+        Result.Success(pokedexDAO.getPokedexByNumber(number))
+    } catch (e: Exception) {
+        Result.DatabaseError("Error fetching Pokedex By Number: $number")
+    }
+
     suspend fun getPokedex(): Flow<Result<List<Pokedex>>> = flow {
         emit(Result.Loading)
         try {
             // get Data from DB and return, also make api call and then store it in db.
-
             val pokedexData = pokedexService.getPokedexData()
             Log.d(TAG, "getPokedex: NetworkResponse Code : ${pokedexData.status}")
             when (pokedexData.status) {
@@ -36,13 +51,8 @@ class PokedexRepository constructor(
                     saveDataToDb(pokedexData.data.pokedex)
                     emit(Result.Success(pokedexData.data.pokedex))
                 }
-                NETWORK_ERROR -> {
-                    // error status
-                    emit(Result.NetworkError(getCacheData()))
-                }
-                else -> {
-                    emit(Result.Error("Error"))
-                }
+                NETWORK_ERROR -> emit(Result.NetworkError(getCacheData()))
+                else -> emit(Result.Error("Error"))
             }
         } catch (e: Exception) {
             Log.e(TAG, "getPokedex: error Message: ${e.message}")
@@ -62,4 +72,5 @@ class PokedexRepository constructor(
     }
 
     private fun getCacheData() = emptyList<Pokedex>()
+
 }

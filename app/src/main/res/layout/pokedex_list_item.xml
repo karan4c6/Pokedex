@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:backgroundTint="#68A890"
+    android:id="@+id/pokedexCardView"
     android:elevation="4dp"
     app:cardCornerRadius="12dp">
 

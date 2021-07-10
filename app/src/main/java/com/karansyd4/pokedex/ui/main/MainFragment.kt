@@ -53,12 +53,10 @@ class MainFragment : Fragment() {
                 }
                 is Result.Success<List<Pokedex>> -> {
                     Log.d(TAG, "observePokedexData: Success")
-                    displayLoading(false)
                     displayData(result.data)
                 }
                 is Result.Error -> {
                     Log.d(TAG, "observePokedexData: ERROR")
-                    displayLoading(false)
                     displayError(result.message)
                 }
                 else -> displayError("Something went wrong")
@@ -67,6 +65,8 @@ class MainFragment : Fragment() {
     }
 
     private fun displayData(data: List<Pokedex>) {
+        binding.pokemonList.visibility = View.VISIBLE
+        binding.progressBar.visibility = View.GONE
         Log.d(TAG, "displayData: pokedex list size: ${data.size}")
         pokedexAdapter = PokedexAdapter(getPokedexCards(data))
         binding.pokemonList.apply {
@@ -85,9 +85,11 @@ class MainFragment : Fragment() {
      */
     private fun cardClickListener(pokedexCardVO: PokedexCardVO) {
         Log.d(TAG, "cardClickListener: Number Clicked: ${pokedexCardVO.data.number}")
+        viewModel.loadPokedexEntryForNumber(pokedexCardVO.data.number)
     }
 
     private fun displayError(message: String?) {
+        binding.progressBar.visibility = View.GONE
         if (message != null) {
             Toast.makeText(context, message, Toast.LENGTH_LONG).show()
         } else {
@@ -95,8 +97,8 @@ class MainFragment : Fragment() {
         }
     }
 
-    private fun displayLoading(isLoading: Boolean = true) {
-        // todo
+    private fun displayLoading() = with(binding) {
+        pokemonList.visibility = View.GONE
+        progressBar.visibility = View.VISIBLE
     }
-
 }

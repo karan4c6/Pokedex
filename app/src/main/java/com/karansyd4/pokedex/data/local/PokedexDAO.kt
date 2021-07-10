@@ -16,7 +16,7 @@ interface PokedexDAO {
      */
     @Suppress("unused")
     @Transaction
-    @Query("SELECT * FROM pokedex_table ORDER BY id")
+    @Query("SELECT * FROM pokedex_table ORDER BY number")
     fun getPokedex(): Flow<List<PokedexEntity>>
 
     /**
@@ -25,8 +25,8 @@ interface PokedexDAO {
      */
     @Suppress("unused")
     @Transaction
-    @Query("SELECT * FROM pokedex_table WHERE id =:number")
-    suspend fun getPokedexByNumber(number: Int): PokedexEntity
+    @Query("SELECT * FROM pokedex_table WHERE number =:number")
+    fun getPokedexByNumber(number: Int): Flow<PokedexEntity>
 
     /**
      *Get all pokedex item
