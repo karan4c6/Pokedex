@@ -17,17 +17,19 @@ class PokedexRepository constructor(
     private val pokedexService: PokedexService
 ) : Repository {
 
-    private val TAG = "PokedexRepository_Kar"
-
-    suspend fun getPokedexSize() {
-        pokedexDAO.getPokedexSize()
+    companion object {
+        const val TAG = "PokedexRepository_Kar"
     }
+
+    suspend fun getPokedexSize() = pokedexDAO.getPokedexSize()
 
     fun getAllPokedexDbData() = try {
         Result.Success(pokedexDAO.getPokedex())
     } catch (e: Exception) {
         Result.DatabaseError("Error fetching all Pokedex Db Data")
     }
+
+    fun getPokedexDetail(number: Int) = pokedexDAO.getPokedexByNumber(number)
 
     fun getPokedexDbData(number: Int) = try {
         Result.Success(pokedexDAO.getPokedexByNumber(number))
@@ -56,7 +58,6 @@ class PokedexRepository constructor(
             }
         } catch (e: Exception) {
             Log.e(TAG, "getPokedex: error Message: ${e.message}")
-            Log.e(TAG, "getPokedex: error: ${e.printStackTrace()}")
             emit(Result.InvalidResponseError(e))
         }
     }
@@ -72,5 +73,4 @@ class PokedexRepository constructor(
     }
 
     private fun getCacheData() = emptyList<Pokedex>()
-
 }

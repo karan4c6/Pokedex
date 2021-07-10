@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pokedex</string>
+    <string name="pokedex_number_format">#%d</string>
 </resources>

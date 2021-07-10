@@ -16,7 +16,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class MainViewModel @Inject constructor(
+class PokedexViewModel @Inject constructor(
     private val pokedexRepository: PokedexRepository
 ) : ViewModel() {
 
@@ -28,14 +28,24 @@ class MainViewModel @Inject constructor(
     val pokedexData: LiveData<Result<List<Pokedex>>>
         get() = _pokedexData
 
+    private val _pokedexDetail: MutableLiveData<Result<Pokedex>> = MutableLiveData()
+    val pokedexDetail: LiveData<Result<Pokedex>>
+        get() = _pokedexDetail
+
     fun loadPokedexEntryForNumber(number: Int) {
+        pokedexRepository.getPokedexDetail(number).onEach {
+//            _pokedexData.value = Pokedex(imageUrl = it.imageUrl, )
+        }.launchIn(viewModelScope)
+
+
         viewModelScope.launch {
-            Log.d(TAG, "pokedex Size : ${pokedexRepository.getPokedexSize()}")
             pokedexRepository.getPokedexDbData(number).let { result ->
+//                pokedexDetail.value = res
+
                 when (result) {
                     is Result.Success -> {
                         result.data.collectLatest {
-                            Log.d(TAG, "Pokedex[${it?.number}] ${it?.id} : ${it?.name} : ${it?.imageUrl}")
+                            Log.d(TAG, "Pokedex[${it.number}] ${it.id} : ${it.name} : ${it.imageUrl}")
                         }
                     }
                     is Result.DatabaseError -> {

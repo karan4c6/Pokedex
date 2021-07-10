@@ -12,18 +12,18 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.model.Pokedex
 import com.karansyd4.pokedex.data.model.Result
-import com.karansyd4.pokedex.databinding.MainFragmentBinding
+import com.karansyd4.pokedex.databinding.PokedexFragmentBinding
 
-class MainFragment : Fragment() {
+class PokedexListFragment : Fragment() {
 
     companion object {
-        fun newInstance() = MainFragment()
-        private const val TAG = "MainFragment_Kar"
+        fun newInstance() = PokedexListFragment()
+        private const val TAG = "PokedexListFragment_Kar"
     }
 
-    private lateinit var binding: MainFragmentBinding
+    private lateinit var binding: PokedexFragmentBinding
 
-    private lateinit var viewModel: MainViewModel
+    private lateinit var viewModel: PokedexViewModel
 
     private lateinit var pokedexAdapter: PokedexAdapter
 
@@ -32,14 +32,14 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         Log.d(TAG, "onCreateView: ")
-        binding = MainFragmentBinding.inflate(LayoutInflater.from(context))
+        binding = PokedexFragmentBinding.inflate(LayoutInflater.from(context))
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "onViewCreated: ")
-        viewModel = ViewModelProvider(requireActivity()).get(MainViewModel::class.java)
+        viewModel = ViewModelProvider(requireActivity()).get(PokedexViewModel::class.java)
         viewModel.loadData(MainStateEvent.GetPokedexEvents)
         observePokedexData()
     }

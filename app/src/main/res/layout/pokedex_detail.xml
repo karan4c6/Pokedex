@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParentLayout.ScreenPadded">
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/WrapContentLayout"
+        android:layout_marginTop="16dp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Rhyhorn" />
+
+    <TextView
+        android:id="@+id/txtNumber"
+        style="@style/WrapContentLayout"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtName"
+        tools:text="#43" />
+
+    <View
+        android:id="@+id/headDivider"
+        style="@style/DividerViewStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+    <TextView
+        android:id="@+id/txtType"
+        style="@style/WrapContentLayout"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headDivider"
+        tools:text="GRASS / POISON" />
+
+    <View
+        android:id="@+id/typeDivider"
+        style="@style/DividerViewStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtType" />
+</androidx.constraintlayout.widget.ConstraintLayout>

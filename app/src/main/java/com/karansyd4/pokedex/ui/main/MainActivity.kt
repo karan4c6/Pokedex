@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
+                .replace(R.id.container, PokedexListFragment.newInstance())
                 .commitNow()
         }
     }
