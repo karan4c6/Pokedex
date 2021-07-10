@@ -25,7 +25,7 @@ class PokedexDetailFragment : Fragment() {
 
     private lateinit var viewModel: PokedexViewModel
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         Log.d(TAG, "onCreateView: ")
         binding = PokedexDetailBinding.inflate(LayoutInflater.from(context))
         return binding.root

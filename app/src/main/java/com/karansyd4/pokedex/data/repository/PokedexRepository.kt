@@ -45,11 +45,6 @@ class PokedexRepository constructor(
             Log.d(TAG, "getPokedex: NetworkResponse Code : ${pokedexData.status}")
             when (pokedexData.status) {
                 NETWORK_OK -> {
-                    // do db insert operation here
-                    pokedexData.data.pokedex.forEach {
-                        Log.d(TAG, "getPokedex: name: ${it.name}")
-                    }
-                    // save to db
                     saveDataToDb(pokedexData.data.pokedex)
                     emit(Result.Success(pokedexData.data.pokedex))
                 }
