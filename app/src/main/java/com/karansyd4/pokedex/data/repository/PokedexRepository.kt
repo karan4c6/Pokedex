@@ -21,20 +21,12 @@ class PokedexRepository constructor(
         const val TAG = "PokedexRepository_Kar"
     }
 
-    suspend fun getPokedexSize() = pokedexDAO.getPokedexSize()
-
-    fun getAllPokedexDbData() = try {
-        Result.Success(pokedexDAO.getPokedex())
-    } catch (e: Exception) {
-        Result.DatabaseError("Error fetching all Pokedex Db Data")
-    }
-
-    fun getPokedexDetail(number: Int) = pokedexDAO.getPokedexByNumber(number)
-
-    fun getPokedexDbData(number: Int) = try {
-        Result.Success(pokedexDAO.getPokedexByNumber(number))
-    } catch (e: Exception) {
-        Result.DatabaseError("Error fetching Pokedex By Number: $number")
+    suspend fun getPokedexDbData(number: Int) = flow {
+        try {
+            emit(Result.Success(pokedexDAO.getPokedexByNumber(number)))
+        } catch (e: Exception) {
+            emit(Result.Error("Error fetching Pokedex By Number: $number"))
+        }
     }
 
     suspend fun getPokedex(): Flow<Result<List<Pokedex>>> = flow {
@@ -53,19 +45,29 @@ class PokedexRepository constructor(
             }
         } catch (e: Exception) {
             Log.e(TAG, "getPokedex: error Message: ${e.message}")
-            emit(Result.InvalidResponseError(e))
+            emit(Result.Error(e.message ?: "Error: ${e.printStackTrace()}"))
         }
     }
 
     private suspend fun saveDataToDb(pokedexList: List<Pokedex>) = with(Dispatchers.IO) {
         Log.d(TAG, "saveDataToDb: list size: ${pokedexList.size}")
         pokedexList.map {
-            PokedexEntity(imageUrl = it.imageUrl, name = it.name, number = it.number)
+            PokedexEntity(imageUrl = it.imageUrl, name = it.name, number = it.number, type = it.type)
         }.let {
             Log.d(TAG, "saveDataToDb: entity size: ${it.size}")
             pokedexDAO.insertAllPokedexItem(it)
         }
     }
+
+    suspend fun getPokedexSize() = pokedexDAO.getPokedexSize()
+
+    suspend fun getAllPokedexDbData() = try {
+        Result.Success(pokedexDAO.getPokedex())
+    } catch (e: Exception) {
+        Result.Error("Error fetching all Pokedex Db Data")
+    }
+
+    suspend fun getPokedexDetail(number: Int) = pokedexDAO.getPokedexByNumber(number)
 
     private fun getCacheData() = emptyList<Pokedex>()
 }

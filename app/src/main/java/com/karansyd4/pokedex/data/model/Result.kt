@@ -24,18 +24,7 @@ sealed class Result<out R> {
     data class NetworkError<out T>(val cacheData: T) : Result<T>()
 
     /**
-     * Database Operation Error
-     */
-    data class DatabaseError(val message: String) : Result<Nothing>()
-
-    /**
      * General Error
      */
     data class Error(val message: String) : Result<Nothing>()
-
-    /**
-     * When network returns invalid json data
-     */
-    data class InvalidResponseError(val exception: Exception) : Result<Nothing>()
-
 }

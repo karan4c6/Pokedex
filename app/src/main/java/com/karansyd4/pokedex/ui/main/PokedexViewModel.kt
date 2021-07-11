@@ -1,15 +1,15 @@
 package com.karansyd4.pokedex.ui.main
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.karansyd4.pokedex.data.local.PokedexEntity
 import com.karansyd4.pokedex.data.model.Pokedex
 import com.karansyd4.pokedex.data.model.Result
 import com.karansyd4.pokedex.data.repository.PokedexRepository
+import com.karansyd4.pokedex.ui.main.PokedexEvent.GetPokedexEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
@@ -28,48 +28,25 @@ class PokedexViewModel @Inject constructor(
     val pokedexData: LiveData<Result<List<Pokedex>>>
         get() = _pokedexData
 
-    private val _pokedexDetail: MutableLiveData<Result<Pokedex>> = MutableLiveData()
-    val pokedexDetail: LiveData<Result<Pokedex>>
+    private val _pokedexDetail: MutableLiveData<Result<PokedexEntity>> = MutableLiveData()
+    val pokedexDetail: LiveData<Result<PokedexEntity>>
         get() = _pokedexDetail
 
-    fun loadPokedexEntryForNumber(number: Int) {
-        pokedexRepository.getPokedexDetail(number).onEach {
-//            _pokedexData.value = Pokedex(imageUrl = it.imageUrl, )
-        }.launchIn(viewModelScope)
-
-
+    fun loadData(pokedexEvent: PokedexEvent) {
         viewModelScope.launch {
-            pokedexRepository.getPokedexDbData(number).let { result ->
-//                pokedexDetail.value = res
-
-                when (result) {
-                    is Result.Success -> {
-                        result.data.collectLatest {
-                            Log.d(TAG, "Pokedex[${it.number}] ${it.id} : ${it.name} : ${it.imageUrl}")
-                        }
-                    }
-                    is Result.DatabaseError -> {
-                        Log.e(TAG, "loadPokedexEntryForNumber: ${result.message}")
-                    }
-                    else -> {
-                        Log.e(TAG, "loadPokedexEntryForNumber: Error")
-                    }
-                }
-            }
-        }
-    }
-
-    fun loadData(mainStateEvent: MainStateEvent) {
-        viewModelScope.launch {
-            when (mainStateEvent) {
-                is MainStateEvent.GetPokedexEvents -> {
+            when (pokedexEvent) {
+                is GetPokedexEvent -> {
                     pokedexRepository.getPokedex()
                         .onEach { dataState ->
                             _pokedexData.value = dataState
-                        }
-                        .launchIn(viewModelScope)
+                        }.launchIn(viewModelScope)
                 }
-                is MainStateEvent.None -> {
+                is PokedexEvent.GetPokedexByNumberEvent -> {
+                    pokedexRepository.getPokedexDbData(pokedexEvent.number).onEach {
+                        _pokedexDetail.value = it
+                    }.launchIn(viewModelScope)
+                }
+                is PokedexEvent.None -> {
                     // No action
                 }
             }
@@ -77,7 +54,8 @@ class PokedexViewModel @Inject constructor(
     }
 }
 
-sealed class MainStateEvent {
-    object GetPokedexEvents : MainStateEvent()
-    object None : MainStateEvent()
+sealed class PokedexEvent {
+    object GetPokedexEvent : PokedexEvent()
+    class GetPokedexByNumberEvent(val number: Int) : PokedexEvent()
+    object None : PokedexEvent()
 }

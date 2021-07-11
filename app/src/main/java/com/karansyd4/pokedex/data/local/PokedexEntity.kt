@@ -21,5 +21,8 @@ data class PokedexEntity(
     val name: String,
 
     @ColumnInfo(name = "number")
-    val number: Int
+    val number: Int,
+
+    @ColumnInfo(name = "type")
+    val type: List<String>
 )

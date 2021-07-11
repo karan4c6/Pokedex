@@ -2,7 +2,7 @@ package com.karansyd4.pokedex.di
 
 import android.content.Context
 import androidx.room.Room
-import com.karansyd4.pokedex.data.local.AppDatabase
+import com.karansyd4.pokedex.data.local.PokedexDatabase
 import com.karansyd4.pokedex.data.local.PokedexDAO
 import dagger.Module
 import dagger.Provides
@@ -17,10 +17,10 @@ object RoomModule {
 
     @Singleton
     @Provides
-    fun provideBlogDb(@ApplicationContext context: Context): AppDatabase {
+    fun provideBlogDb(@ApplicationContext context: Context): PokedexDatabase {
         return Room.databaseBuilder(
-            context, AppDatabase::class.java,
-            AppDatabase.DATABASE_NAME
+            context, PokedexDatabase::class.java,
+            PokedexDatabase.DATABASE_NAME
         )
             .fallbackToDestructiveMigration()
             .build()
@@ -28,7 +28,7 @@ object RoomModule {
 
     @Singleton
     @Provides
-    fun provideBlogDAO(appDatabase: AppDatabase): PokedexDAO {
-        return appDatabase.pokedexDAO()
+    fun provideBlogDAO(pokedexDatabase: PokedexDatabase): PokedexDAO {
+        return pokedexDatabase.pokedexDAO()
     }
 }

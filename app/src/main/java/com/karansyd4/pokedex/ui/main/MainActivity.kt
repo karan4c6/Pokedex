@@ -25,13 +25,5 @@ class MainActivity : AppCompatActivity() {
 
         // Set up the action bar for use with the NavController
         setupActionBarWithNavController(navController)
-
-/*
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.container, PokedexListFragment.newInstance())
-                .commitNow()
-        }
-*/
     }
 }

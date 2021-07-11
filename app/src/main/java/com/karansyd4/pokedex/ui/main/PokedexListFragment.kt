@@ -42,7 +42,7 @@ class PokedexListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "onViewCreated: ")
         viewModel = ViewModelProvider(requireActivity()).get(PokedexViewModel::class.java)
-        viewModel.loadData(MainStateEvent.GetPokedexEvents)
+        viewModel.loadData(PokedexEvent.GetPokedexEvent)
         observePokedexData()
     }
 

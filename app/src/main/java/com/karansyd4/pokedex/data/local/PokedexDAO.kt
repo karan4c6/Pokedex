@@ -5,7 +5,6 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
-import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface PokedexDAO {
@@ -17,7 +16,7 @@ interface PokedexDAO {
     @Suppress("unused")
     @Transaction
     @Query("SELECT * FROM pokedex_table ORDER BY number")
-    fun getPokedex(): Flow<List<PokedexEntity>>
+    suspend fun getPokedex(): List<PokedexEntity>
 
     /**
      * Get Pokedex item by Pokedex number
@@ -26,7 +25,7 @@ interface PokedexDAO {
     @Suppress("unused")
     @Transaction
     @Query("SELECT * FROM pokedex_table WHERE number =:number")
-    fun getPokedexByNumber(number: Int): Flow<PokedexEntity>
+    suspend fun getPokedexByNumber(number: Int): PokedexEntity
 
     /**
      *Get all pokedex item

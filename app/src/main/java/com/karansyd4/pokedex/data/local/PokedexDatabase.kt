@@ -4,9 +4,9 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 
-@Database(entities = [PokedexEntity::class], version = 2, exportSchema = false)
+@Database(entities = [PokedexEntity::class], version = 3, exportSchema = false)
 @TypeConverters(Converters::class)
-abstract class AppDatabase : RoomDatabase() {
+abstract class PokedexDatabase : RoomDatabase() {
 
     abstract fun pokedexDAO(): PokedexDAO
 
