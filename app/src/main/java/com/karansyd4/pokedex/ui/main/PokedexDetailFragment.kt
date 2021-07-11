@@ -5,8 +5,10 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.local.PokedexEntity
 import com.karansyd4.pokedex.data.model.Result
@@ -33,6 +35,12 @@ class PokedexDetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(requireActivity()).get(PokedexViewModel::class.java)
         observePokedexDetailData()
+       /* requireActivity().onBackPressedDispatcher.addCallback(object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                Log.d(TAG, "handleOnBackPressed: ")
+                Navigation.findNavController(view).navigate(R.id.action_pokedexDetailFragment_to_pokedexListFragment)
+            }
+        })*/
     }
 
     private fun observePokedexDetailData() {
@@ -78,4 +86,5 @@ class PokedexDetailFragment : Fragment() {
         txtNumber.text = getString(R.string.pokedex_number_format, data.number)
         txtType.text = data.type.joinToString(" / ")
     }
+
 }
