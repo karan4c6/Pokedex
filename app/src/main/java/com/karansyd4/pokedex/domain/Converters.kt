@@ -1,4 +1,4 @@
-package com.karansyd4.pokedex.data.local
+package com.karansyd4.pokedex.domain
 
 import androidx.room.TypeConverter
 import java.util.Date
