@@ -27,10 +27,4 @@ sealed class Result<out R> {
      * General Error
      */
     data class Error(val message: String) : Result<Nothing>()
-
-    /**
-     * When Json Syntax Error Happens
-     */
-    data class InvalidResponseError(val exception: Exception) : Result<Nothing>()
-
 }

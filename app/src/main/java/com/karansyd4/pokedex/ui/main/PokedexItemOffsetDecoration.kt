@@ -2,7 +2,6 @@ package com.karansyd4.pokedex.ui.main
 
 import android.content.Context
 import android.graphics.Rect
-import android.util.Log
 import android.view.View
 import androidx.annotation.DimenRes
 import androidx.annotation.NonNull
@@ -49,7 +48,7 @@ class PokedexItemOffsetDecoration(private val itemOffset: Int) : RecyclerView.It
 
     override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
         val position: Int = parent.getChildAdapterPosition(view)
-        Log.d(TAG, "getItemOffsets: $itemOffset")
+//        Log.d(TAG, "getItemOffsets: $itemOffset")
 
         leftItemOffset = 12
         topItemOffset = 12

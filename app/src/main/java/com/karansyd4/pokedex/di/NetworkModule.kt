@@ -2,7 +2,7 @@ package com.karansyd4.pokedex.di
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import com.karansyd4.pokedex.data.remote.PokedexService
-import com.karansyd4.pokedex.util.Util.Companion.API_BASE_URL
+import com.karansyd4.pokedex.util.Util.API_BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

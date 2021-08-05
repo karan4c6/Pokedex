@@ -6,24 +6,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.model.Pokedex
 import com.karansyd4.pokedex.data.model.Result
-import com.karansyd4.pokedex.databinding.MainFragmentBinding
+import com.karansyd4.pokedex.databinding.FragmentPokedexListBinding
 
-class MainFragment : Fragment() {
+class PokedexListFragment : Fragment() {
 
     companion object {
-        fun newInstance() = MainFragment()
-        private const val TAG = "MainFragment_Kar"
+        fun newInstance() = PokedexListFragment()
+        private const val TAG = "PokedexListFragment_Kar"
     }
 
-    private lateinit var binding: MainFragmentBinding
+    private lateinit var binding: FragmentPokedexListBinding
 
-    private lateinit var viewModel: MainViewModel
+    private lateinit var viewModel: PokedexViewModel
 
     private lateinit var pokedexAdapter: PokedexAdapter
 
@@ -32,15 +34,15 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         Log.d(TAG, "onCreateView: ")
-        binding = MainFragmentBinding.inflate(LayoutInflater.from(context))
+        binding = FragmentPokedexListBinding.inflate(LayoutInflater.from(context))
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "onViewCreated: ")
-        viewModel = ViewModelProvider(requireActivity()).get(MainViewModel::class.java)
-        viewModel.loadData(MainStateEvent.GetPokedexEvents)
+        viewModel = ViewModelProvider(requireActivity()).get(PokedexViewModel::class.java)
+        viewModel.loadData(PokedexEvent.GetPokedexEvent)
         observePokedexData()
     }
 
@@ -53,12 +55,10 @@ class MainFragment : Fragment() {
                 }
                 is Result.Success<List<Pokedex>> -> {
                     Log.d(TAG, "observePokedexData: Success")
-                    displayLoading(false)
                     displayData(result.data)
                 }
                 is Result.Error -> {
                     Log.d(TAG, "observePokedexData: ERROR")
-                    displayLoading(false)
                     displayError(result.message)
                 }
                 else -> displayError("Something went wrong")
@@ -67,6 +67,8 @@ class MainFragment : Fragment() {
     }
 
     private fun displayData(data: List<Pokedex>) {
+        binding.pokemonList.visibility = View.VISIBLE
+        binding.progressBar.visibility = View.GONE
         Log.d(TAG, "displayData: pokedex list size: ${data.size}")
         pokedexAdapter = PokedexAdapter(getPokedexCards(data))
         binding.pokemonList.apply {
@@ -85,9 +87,14 @@ class MainFragment : Fragment() {
      */
     private fun cardClickListener(pokedexCardVO: PokedexCardVO) {
         Log.d(TAG, "cardClickListener: Number Clicked: ${pokedexCardVO.data.number}")
+        findNavController().navigate(
+            R.id.action_pokedexListFragment_to_pokedexDetailFragment,
+            bundleOf(getString(R.string.arg_pokedex_number) to pokedexCardVO.data.number)
+        )
     }
 
     private fun displayError(message: String?) {
+        binding.progressBar.visibility = View.GONE
         if (message != null) {
             Toast.makeText(context, message, Toast.LENGTH_LONG).show()
         } else {
@@ -95,8 +102,8 @@ class MainFragment : Fragment() {
         }
     }
 
-    private fun displayLoading(isLoading: Boolean = true) {
-        // todo
+    private fun displayLoading() = with(binding) {
+        pokemonList.visibility = View.GONE
+        progressBar.visibility = View.VISIBLE
     }
-
 }
