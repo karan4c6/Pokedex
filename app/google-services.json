@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "672049681164",
+    "project_id": "fir-realtimedatabasedemo-87ba0",
+    "storage_bucket": "fir-realtimedatabasedemo-87ba0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672049681164:android:cd4c8ab59b674db5c0ef29",
+        "android_client_info": {
+          "package_name": "com.karansyd4.pokedex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672049681164-9ae9tga991nuknorhl1e2i2921n1gfej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeB1e7O2qL6nf6riAWXTysNyMOflOmFDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672049681164-9ae9tga991nuknorhl1e2i2921n1gfej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
