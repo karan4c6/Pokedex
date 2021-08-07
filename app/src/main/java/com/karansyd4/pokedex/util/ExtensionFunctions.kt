@@ -57,3 +57,5 @@ fun NavController.navigateWithAnim(@IdRes destId: Int, args: Bundle? = null) {
         Log.e(this::class.java.simpleName, e.message ?: "Error while navigating to $destId")
     }
 }
+
+fun Int.padPokedexNumber(): String = this.toString().padStart(3, '0')

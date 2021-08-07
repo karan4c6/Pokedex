@@ -15,6 +15,8 @@ import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.model.Pokedex
 import com.karansyd4.pokedex.data.model.Result
 import com.karansyd4.pokedex.databinding.FragmentPokedexListBinding
+import com.karansyd4.pokedex.util.PokedexHelper.getPokedexCards
+import com.karansyd4.pokedex.util.navigateWithAnim
 
 class PokedexListFragment : Fragment() {
 
@@ -70,7 +72,7 @@ class PokedexListFragment : Fragment() {
         binding.pokemonList.visibility = View.VISIBLE
         binding.progressBar.visibility = View.GONE
         Log.d(TAG, "displayData: pokedex list size: ${data.size}")
-        pokedexAdapter = PokedexAdapter(getPokedexCards(data))
+        pokedexAdapter = PokedexAdapter(getPokedexCards(data, ::cardClickListener))
         binding.pokemonList.apply {
             adapter = pokedexAdapter
             layoutManager = GridLayoutManager(context, 2)
@@ -78,16 +80,12 @@ class PokedexListFragment : Fragment() {
         }
     }
 
-    private fun getPokedexCards(data: List<Pokedex>) = data.map {
-        PokedexCardVO(data = it, onClickListener = ::cardClickListener)
-    }
-
     /**
      * Click Listener for Pokedex Card Item Click
      */
     private fun cardClickListener(pokedexCardVO: PokedexCardVO) {
         Log.d(TAG, "cardClickListener: Number Clicked: ${pokedexCardVO.data.number}")
-        findNavController().navigate(
+        findNavController().navigateWithAnim(
             R.id.action_pokedexListFragment_to_pokedexDetailFragment,
             bundleOf(getString(R.string.arg_pokedex_number) to pokedexCardVO.data.number)
         )
