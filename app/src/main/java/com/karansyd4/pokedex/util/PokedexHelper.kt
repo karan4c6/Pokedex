@@ -1,7 +1,7 @@
 package com.karansyd4.pokedex.util
 
 import com.karansyd4.pokedex.data.model.Pokedex
-import com.karansyd4.pokedex.ui.main.PokedexCardVO
+import com.karansyd4.pokedex.ui.pokedexlist.PokedexCardVO
 
 object PokedexHelper {
 

@@ -1,4 +1,4 @@
-package com.karansyd4.pokedex.ui.main
+package com.karansyd4.pokedex.ui.pokedexlist
 
 import android.content.Context
 import android.graphics.Rect

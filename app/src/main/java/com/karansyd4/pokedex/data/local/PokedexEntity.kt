@@ -24,5 +24,32 @@ data class PokedexEntity(
     val number: Int,
 
     @ColumnInfo(name = "type")
-    val type: List<String>
+    val type: List<String>,
+
+    @ColumnInfo(name = "evolveCandy")
+    val evolveCandy: Int? = null,
+
+    @ColumnInfo(name = "evolveToName")
+    val evolveToName: String? = null,
+
+    @ColumnInfo(name = "evolveToNumber")
+    val evolveToNumber: Int? = null,
+
+    @ColumnInfo(name = "mega")
+    val mega: Boolean,
+
+    @ColumnInfo(name = "megaEnergy")
+    val megaEnergy: String? = null,
+
+    @ColumnInfo(name = "buddyCandyKm")
+    val buddyCandyKm: Int,
+
+    @ColumnInfo(name = "fastMove")
+    val fastMove: String,
+
+    @ColumnInfo(name = "chargedMove")
+    val chargedMove: String,
+
+    @ColumnInfo(name = "specialMove")
+    val specialMove: String? = null
 )

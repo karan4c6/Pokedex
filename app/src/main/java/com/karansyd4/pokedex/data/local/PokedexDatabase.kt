@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.karansyd4.pokedex.domain.Converters
 
-@Database(entities = [PokedexEntity::class], version = 3, exportSchema = false)
+@Database(entities = [PokedexEntity::class], version = 6, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class PokedexDatabase : RoomDatabase() {
 

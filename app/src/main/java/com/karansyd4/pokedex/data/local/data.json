@@ -86,6 +86,7 @@
         },
         "evolution": {
           "mega": true,
+          "megaEnergy": "200/50 Energy",
           "megaCP": 3698
         },
         "buddy": {

@@ -2,4 +2,12 @@
     <string name="app_name">Pokedex</string>
     <string name="pokedex_number_format">#%d</string>
     <string name="pokedex">Pokedex</string>
+    <string name="candy">%s CANDY</string>
+    <string name="mega">Mega %s</string>
+    <string name="buddy">Buddy</string>
+    <string name="cand_km">%d KM</string>
+    <string name="fast">Fast</string>
+    <string name="charged">Charged</string>
+    <string name="special">Special</string>
+    <string name="best_moveset">Best Moveset</string>
 </resources>

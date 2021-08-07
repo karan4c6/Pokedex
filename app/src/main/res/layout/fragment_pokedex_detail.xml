@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/txtName"
         style="@style/WrapContentLayout"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/spacing2x"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,9 +26,7 @@
     <View
         android:id="@+id/headDivider"
         style="@style/DividerViewStyle"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/spacing2x"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
@@ -36,7 +34,7 @@
     <TextView
         android:id="@+id/txtType"
         style="@style/WrapContentLayout"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/spacing2x"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,10 +44,93 @@
     <View
         android:id="@+id/typeDivider"
         style="@style/DividerViewStyle"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/spacing2x"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtType" />
+
+    <include
+        android:id="@+id/evolveLayout"
+        style="@style/SectionLayout"
+        layout="@layout/item_title_value_horizontal"
+        android:layout_marginTop="@dimen/spacing3x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeDivider"
+        tools:ignore="IncludeLayoutParam" />
+
+    <include
+        android:id="@+id/megaEvolveLayout"
+        style="@style/SectionLayout"
+        layout="@layout/item_title_value_horizontal"
+        android:layout_marginTop="@dimen/spacing2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evolveLayout"
+        tools:ignore="IncludeLayoutParam" />
+
+    <include
+        android:id="@+id/buddyLayout"
+        style="@style/SectionLayout"
+        layout="@layout/item_title_value_horizontal"
+        android:layout_marginTop="@dimen/spacing2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/megaEvolveLayout"
+        tools:ignore="IncludeLayoutParam" />
+
+    <View
+        android:id="@+id/evolveDivider"
+        style="@style/DividerViewStyle"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buddyLayout" />
+
+    <TextView
+        android:id="@+id/txtBestMoveHeading"
+        style="@style/SectionLayout"
+        android:layout_marginTop="@dimen/spacing3x"
+        android:text="@string/best_moveset"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evolveDivider" />
+
+    <LinearLayout
+        android:id="@+id/attacksLayout"
+        style="@style/SectionLayout"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/spacing2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBestMoveHeading">
+
+        <include
+            android:id="@+id/fastAttackLayout"
+            style="@style/SectionLayout"
+            layout="@layout/item_title_value_horizontal" />
+
+        <include
+            android:id="@+id/chargedAttackLayout"
+            style="@style/SectionLayout"
+            layout="@layout/item_title_value_horizontal"
+            android:layout_marginTop="@dimen/spacing2x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/megaEvolveLayout"
+            tools:ignore="IncludeLayoutParam" />
+
+        <include
+            android:id="@+id/specialAttackLayout"
+            style="@style/SectionLayout"
+            layout="@layout/item_title_value_horizontal"
+            android:layout_marginTop="@dimen/spacing2x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/megaEvolveLayout"
+            tools:ignore="IncludeLayoutParam" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:backgroundTint="#68A890"
     android:id="@+id/pokedexCardView"
     android:elevation="4dp"
@@ -29,7 +30,7 @@
             android:id="@+id/pokemonImage"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/pokedex_1"
+            tools:src="@drawable/bulbasaur"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

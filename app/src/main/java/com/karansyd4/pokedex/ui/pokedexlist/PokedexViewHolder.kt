@@ -1,4 +1,4 @@
-package com.karansyd4.pokedex.ui.main
+package com.karansyd4.pokedex.ui.pokedexlist
 
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
