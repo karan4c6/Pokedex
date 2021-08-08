@@ -22,10 +22,8 @@ class PokedexRepository constructor(
     }
 
     suspend fun getPokedexDbData(number: Int) = flow {
-        Log.d(TAG, "getPokedexDbData: $number")
         try {
-            Log.d(TAG, "getPokedexDbData: Emit: $number")
-            emit(Result.Success(pokedexDAO.getPokedexByNumber(number)))
+            emit(Result.Success(getPokedexDetail(number)))
         } catch (e: Exception) {
             emit(Result.Error("Error fetching Pokedex By Number: $number"))
         }
@@ -83,7 +81,7 @@ class PokedexRepository constructor(
         Result.Error("Error fetching all Pokedex Db Data")
     }
 
-    suspend fun getPokedexDetail(number: Int) = pokedexDAO.getPokedexByNumber(number)
+    private suspend fun getPokedexDetail(number: Int) = pokedexDAO.getPokedexByNumber(number)
 
     private fun getCacheData() = emptyList<Pokedex>()
 }

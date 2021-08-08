@@ -4,14 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/MatchParentLayout.ScreenPadded">
 
+    <ImageView
+        android:id="@+id/ivPokemon"
+        style="@style/SectionLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/bulbasaur" />
+
     <TextView
         android:id="@+id/txtName"
         style="@style/WrapContentLayout"
         android:layout_marginTop="@dimen/spacing2x"
+        android:textColor="@color/black"
         android:textSize="32sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPokemon"
+        app:layout_goneMarginTop="@dimen/spacing3x"
         tools:text="Rhyhorn" />
 
     <TextView

@@ -6,14 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
+import coil.load
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.local.PokedexEntity
 import com.karansyd4.pokedex.data.model.Result
 import com.karansyd4.pokedex.databinding.FragmentPokedexDetailBinding
+import com.karansyd4.pokedex.util.Util
 import com.karansyd4.pokedex.util.Util.ZERO
 import com.karansyd4.pokedex.util.ifLet
+import com.karansyd4.pokedex.util.padPokedexNumber
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -83,6 +85,8 @@ class PokedexDetailFragment : Fragment() {
         if (fromCache) {
             Log.d(TAG, "displayData: data displayed from cache")
         }
+
+        ivPokemon.load(Util.getPokemonImageUrl(data.number.padPokedexNumber()))
 
         txtName.text = data.name
         txtNumber.text = getString(R.string.pokedex_number_format, data.number)

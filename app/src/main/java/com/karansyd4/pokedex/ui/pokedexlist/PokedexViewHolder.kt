@@ -15,7 +15,7 @@ class PokedexViewHolder(private val pokedexItemBinding: PokedexListItemBinding) 
     }
 
     fun bind(pokedexCardVO: PokedexCardVO) = with(pokedexItemBinding) {
-        //pokedexNumber.text = pokedexCardVO.data.number.toString()
+        pokedexNumber.text = pokedexCardVO.data.number.padPokedexNumber()
         pokemonName.text = pokedexCardVO.data.name
         pokemonImage.load(getPokemonImageUrl(pokedexCardVO.data.number.padPokedexNumber()))
 

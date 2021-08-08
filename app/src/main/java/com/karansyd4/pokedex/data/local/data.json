@@ -25,8 +25,7 @@
         },
         "bestMoveset": {
           "fast": "Vine Whip",
-          "charge": "Power Whip",
-          "special": "NA"
+          "charge": "Power Whip"
         },
         "fight": {
           "weakToType": [
@@ -60,8 +59,7 @@
         },
         "bestMoveset": {
           "fast": "Vine Whip",
-          "charge": "Power Whip",
-          "special": "NA"
+          "charge": "Power Whip"
         },
         "fight": {
           "weakToType": [
@@ -86,8 +84,8 @@
         },
         "evolution": {
           "mega": true,
-          "megaEnergy": "200/50 Energy",
-          "megaCP": 3698
+          "megaCP": 3698,
+          "megaEnergy": "200/50 Energy"
         },
         "buddy": {
           "candyKm": 3
@@ -103,6 +101,102 @@
             "Flying",
             "Ice",
             "Psychic"
+          ]
+        }
+      },
+      {
+        "name": "Charmander",
+        "number": 4,
+        "imageUrl": "https://raw.githubusercontent.com/karan4c6/APIs/main/pokedex/images/004.jpg",
+        "type": [
+          "FIRE"
+        ],
+        "stats": {
+          "cp": 980,
+          "hp": 105
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 25,
+          "evolveToName": "Charmeleon",
+          "evolveToNumber": 5
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Ember",
+          "charge": "Flamethrower"
+        },
+        "fight": {
+          "weakToType": [
+            "Ground",
+            "Rock",
+            "Water"
+          ]
+        }
+      },
+      {
+        "name": "Charmeleon",
+        "number": 5,
+        "imageUrl": "https://raw.githubusercontent.com/karan4c6/APIs/main/pokedex/images/005.jpg",
+        "type": [
+          "FIRE"
+        ],
+        "stats": {
+          "cp": 1653,
+          "hp": 131
+        },
+        "evolution": {
+          "mega": false,
+          "candy": 100,
+          "evolveToName": "Charizard",
+          "evolveToNumber": 6
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Fire Fang",
+          "charge": "Flamethrower"
+        },
+        "fight": {
+          "weakToType": [
+            "Ground",
+            "Rock",
+            "Water"
+          ]
+        }
+      },
+      {
+        "name": "Charizard",
+        "number": 6,
+        "imageUrl": "https://raw.githubusercontent.com/karan4c6/APIs/main/pokedex/images/006.jpg",
+        "type": [
+          "FIRE"
+        ],
+        "stats": {
+          "cp": 2889,
+          "hp": 158
+        },
+        "evolution": {
+          "mega": true,
+          "megaCP": 3698,
+          "megaEnergy": "200/40 Energy"
+        },
+        "buddy": {
+          "candyKm": 3
+        },
+        "bestMoveset": {
+          "fast": "Fire Spin",
+          "charge": "Overheat",
+          "special": "Dragon Breath / Blast Burn"
+        },
+        "fight": {
+          "weakToType": [
+            "Ground",
+            "Rock",
+            "Water"
           ]
         }
       }
