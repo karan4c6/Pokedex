@@ -19,6 +19,9 @@ class PokedexViewHolder(private val pokedexItemBinding: PokedexListItemBinding) 
         pokemonName.text = pokedexCardVO.data.name
         pokemonImage.load(getPokemonImageUrl(pokedexCardVO.data.number.padPokedexNumber()))
 
+        // A11y
+        pokedexCardView.contentDescription = "${pokedexCardVO.data.number} ${pokemonName.text}"
+
         pokedexItemBinding.root.clickWithDebounce {
             pokedexCardVO.onClickListener(pokedexCardVO)
         }

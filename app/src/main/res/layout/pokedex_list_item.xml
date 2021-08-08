@@ -6,10 +6,12 @@
     style="@style/SectionLayout"
     android:backgroundTint="#68A890"
     android:elevation="@dimen/spacinghalfx"
+    android:importantForAccessibility="yes"
     app:cardCornerRadius="@dimen/spacing1Halfx">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         style="@style/SectionLayout"
+        android:importantForAccessibility="noHideDescendants"
         android:padding="@dimen/spacing2x">
 
         <TextView
