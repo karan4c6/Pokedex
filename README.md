@@ -9,4 +9,16 @@ MVVM
 Coroutines, Flow, LiveData
 Retrofit
 Room,
-Coil,
+Coil
+
+
+<img src="/images/Pokedex_List.png" width="260">
+
+
+<img src="/images/Charander_Top.png" width="260">
+
+
+<img src="/images/Charmander_Bottom.png" width="260">
+
+
+<img src="/images/Pokedex_MVVM.mov" width="260">
