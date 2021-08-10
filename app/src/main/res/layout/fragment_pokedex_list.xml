@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context=".ui.main.PokedexListFragment">
+    tools:context=".ui.pokedexlist.PokedexListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pokemonList"
@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        tools:listitem="@layout/pokedex_list_item"
+        tools:listitem="@layout/item_pokedex"
         tools:spanCount="2"
         tools:visibility="visible" />
 

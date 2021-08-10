@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_offset">2dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <item name="font_scale_threshold" format="float" type="dimen">1.3</item>
+
+    <dimen name="spacinghalfx">4dp</dimen>
+    <dimen name="spacing1x">8dp</dimen>
+    <dimen name="spacing1Halfx">12dp</dimen>
+    <dimen name="spacing2x">16dp</dimen>
+    <dimen name="spacing3x">24dp</dimen>
+    <dimen name="spacing4x">32dp</dimen>
+    <dimen name="spacing5x">40dp</dimen>
+    <dimen name="spacing6x">48dp</dimen>
+    <dimen name="spacing7x">56dp</dimen>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WrapContentLayout"
+    android:id="@+id/elementTypeParentLayout"
+    android:importantForAccessibility="yes">
+
+    <ImageView
+        android:id="@+id/ivElementIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:importantForAccessibility="no"
+        tools:src="@drawable/bulbasaur" />
+
+    <TextView
+        android:id="@+id/txtElementType"
+        style="@style/SectionLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/spacing1x"
+        android:importantForAccessibility="no"
+        android:textSize="14sp"
+        tools:text="Electric" />
+</LinearLayout>

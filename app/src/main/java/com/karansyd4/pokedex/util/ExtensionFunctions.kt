@@ -7,9 +7,14 @@ import android.util.Log
 import android.view.View
 import androidx.annotation.IdRes
 import androidx.core.content.res.ResourcesCompat
+import androidx.lifecycle.Lifecycle
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
 import com.karansyd4.pokedex.R
+import kotlinx.coroutines.ensureActive
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.collectLatest
+import kotlin.coroutines.coroutineContext
 
 // https://stackoverflow.com/questions/35513636/multiple-variable-let-in-kotlin
 inline fun <T : Any> ifLet(vararg elements: T?, closure: (List<T>) -> Unit): Unit? {
@@ -45,15 +50,15 @@ fun Context.isFontScaled() =
 fun NavController.navigateWithAnim(@IdRes destId: Int, args: Bundle? = null) {
     try {
         this.navigate(
-            destId,
-            args,
-            NavOptions.Builder()
+            destId, args, NavOptions.Builder()
                 .setEnterAnim(R.anim.slide_anim_in)
                 .setExitAnim(R.anim.slide_anim_out)
                 .setPopEnterAnim(R.anim.slide_pop_anim_in)
                 .setPopExitAnim(R.anim.slide_pop_anim_out).build()
         )
     } catch (e: Exception) {
-        Log.e(this::class.java.simpleName, e.message ?: "Error while navigating to $destId")
+        Log.e(this::class.java.simpleName, "Error navigating to: $destId \nError: ${e.message}")
     }
 }
+
+fun Int.padPokedexNumber(): String = this.toString().padStart(3, '0')

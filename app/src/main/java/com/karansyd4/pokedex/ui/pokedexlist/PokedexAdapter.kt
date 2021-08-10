@@ -1,17 +1,17 @@
-package com.karansyd4.pokedex.ui.main
+package com.karansyd4.pokedex.ui.pokedexlist
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.karansyd4.pokedex.data.model.Pokedex
-import com.karansyd4.pokedex.databinding.PokedexListItemBinding
+import com.karansyd4.pokedex.databinding.ItemPokedexBinding
 
 class PokedexAdapter(
     var pokedexItemsList: List<PokedexCardVO>
 ) : RecyclerView.Adapter<PokedexViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokedexViewHolder {
-        val baseBinding = PokedexListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val baseBinding = ItemPokedexBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PokedexViewHolder(baseBinding)
     }
 

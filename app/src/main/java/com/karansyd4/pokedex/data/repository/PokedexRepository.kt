@@ -23,7 +23,7 @@ class PokedexRepository constructor(
 
     suspend fun getPokedexDbData(number: Int) = flow {
         try {
-            emit(Result.Success(pokedexDAO.getPokedexByNumber(number)))
+            emit(Result.Success(getPokedexDetail(number)))
         } catch (e: Exception) {
             emit(Result.Error("Error fetching Pokedex By Number: $number"))
         }
@@ -52,7 +52,22 @@ class PokedexRepository constructor(
     private suspend fun saveDataToDb(pokedexList: List<Pokedex>) = with(Dispatchers.IO) {
         Log.d(TAG, "saveDataToDb: list size: ${pokedexList.size}")
         pokedexList.map {
-            PokedexEntity(imageUrl = it.imageUrl, name = it.name, number = it.number, type = it.type)
+            PokedexEntity(
+                imageUrl = it.imageUrl,
+                name = it.name,
+                number = it.number,
+                type = it.type,
+                evolveCandy = it.evolution.candy,
+                evolveToName = it.evolution.evolveToName,
+                evolveToNumber = it.evolution.evolveToNumber,
+                mega = it.evolution.mega,
+                megaEnergy = it.evolution.megaEnergy,
+                buddyCandyKm = it.buddy.candyKm,
+                fastMove = it.bestMoveset.fast,
+                chargedMove = it.bestMoveset.charge,
+                specialMove = it.bestMoveset.special,
+                weakToType = it.fight.weakToType
+            )
         }.let {
             Log.d(TAG, "saveDataToDb: entity size: ${it.size}")
             pokedexDAO.insertAllPokedexItem(it)
@@ -67,7 +82,7 @@ class PokedexRepository constructor(
         Result.Error("Error fetching all Pokedex Db Data")
     }
 
-    suspend fun getPokedexDetail(number: Int) = pokedexDAO.getPokedexByNumber(number)
+    private suspend fun getPokedexDetail(number: Int) = pokedexDAO.getPokedexByNumber(number)
 
     private fun getCacheData() = emptyList<Pokedex>()
 }

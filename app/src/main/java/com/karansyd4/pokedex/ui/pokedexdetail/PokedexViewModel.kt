@@ -1,5 +1,6 @@
-package com.karansyd4.pokedex.ui.main
+package com.karansyd4.pokedex.ui.pokedexdetail
 
+import android.os.Build
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -8,13 +9,17 @@ import com.karansyd4.pokedex.data.local.PokedexEntity
 import com.karansyd4.pokedex.data.model.Pokedex
 import com.karansyd4.pokedex.data.model.Result
 import com.karansyd4.pokedex.data.repository.PokedexRepository
-import com.karansyd4.pokedex.ui.main.PokedexEvent.GetPokedexEvent
+import com.karansyd4.pokedex.ui.pokedexdetail.PokedexEvent.GetPokedexEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.launchIn
-import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+/**
+ * Shared between multiple fragments.
+ * - PokedexListFragment and
+ * - PokedexDetailFragment
+ */
 @HiltViewModel
 class PokedexViewModel @Inject constructor(
     private val pokedexRepository: PokedexRepository
@@ -24,10 +29,16 @@ class PokedexViewModel @Inject constructor(
         private const val TAG = "MainViewModel_Kar"
     }
 
+    /**
+     * Pokedex List Data
+     */
     private val _pokedexData: MutableLiveData<Result<List<Pokedex>>> = MutableLiveData()
     val pokedexData: LiveData<Result<List<Pokedex>>>
         get() = _pokedexData
 
+    /**
+     * Pokemon Details
+     */
     private val _pokedexDetail: MutableLiveData<Result<PokedexEntity>> = MutableLiveData()
     val pokedexDetail: LiveData<Result<PokedexEntity>>
         get() = _pokedexDetail
@@ -36,15 +47,15 @@ class PokedexViewModel @Inject constructor(
         viewModelScope.launch {
             when (pokedexEvent) {
                 is GetPokedexEvent -> {
-                    pokedexRepository.getPokedex()
-                        .onEach { dataState ->
-                            _pokedexData.value = dataState
-                        }.launchIn(viewModelScope)
+                    pokedexRepository.getPokedex().collectLatest { dataState ->
+                        _pokedexData.value = dataState
+                    }
                 }
                 is PokedexEvent.GetPokedexByNumberEvent -> {
-                    pokedexRepository.getPokedexDbData(pokedexEvent.number).onEach {
-                        _pokedexDetail.value = it
-                    }.launchIn(viewModelScope)
+                    pokedexRepository.getPokedexDbData(pokedexEvent.number).collectLatest {
+                        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.O)
+                            _pokedexDetail.value = it
+                    }
                 }
                 is PokedexEvent.None -> {
                     // No action

@@ -2,8 +2,8 @@ package com.karansyd4.pokedex.di
 
 import android.content.Context
 import androidx.room.Room
-import com.karansyd4.pokedex.data.local.PokedexDatabase
 import com.karansyd4.pokedex.data.local.PokedexDAO
+import com.karansyd4.pokedex.data.local.PokedexDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

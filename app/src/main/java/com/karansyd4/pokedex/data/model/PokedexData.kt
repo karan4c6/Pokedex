@@ -43,7 +43,8 @@ data class Evolution(
     val evolveToName: String? = null,
     val evolveToNumber: Int? = null,
     val mega: Boolean,
-    val megaCP: Int? = null
+    val megaCP: Int? = null,
+    val megaEnergy: String? = null
 )
 
 @Serializable

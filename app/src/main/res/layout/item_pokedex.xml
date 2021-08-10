@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pokedexCardView"
+    style="@style/SectionLayout"
+    android:backgroundTint="#68A890"
+    android:elevation="@dimen/spacinghalfx"
+    android:importantForAccessibility="yes"
+    app:cardCornerRadius="@dimen/spacing1Halfx">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/SectionLayout"
+        android:importantForAccessibility="noHideDescendants"
+        android:padding="@dimen/spacing2x">
+
+        <TextView
+            android:id="@+id/pokemonName"
+            style="@style/WrapContentLayout"
+            android:layout_marginTop="@dimen/spacing1x"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonImage"
+            tools:text="Bulbasaur" />
+
+        <ImageView
+            android:id="@+id/pokemonImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/bulbasaur" />
+
+        <TextView
+            android:id="@+id/pokedexNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_56"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="001" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
