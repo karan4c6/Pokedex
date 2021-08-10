@@ -9,7 +9,7 @@ GithubActions for CI / CD, to build apk automatically when a pull request is mer
 <br>
 Kotlin <br>
 MVVM <br>
-Dagger, HILT for DI
+Dagger, HILT for DI<br>
 Coroutines, Flow, LiveData<br>
 Retrofit<br>
 Room for Db with Coroutines<br>
