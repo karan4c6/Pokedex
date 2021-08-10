@@ -19,8 +19,3 @@ Coil
 
 
 <img src="/images/Charmander_Bottom.png" width="260">
-
-
-<iframe width="420" height="315"
-src="/images/Pokedex_MVVM.mov">
-</iframe>
