@@ -66,6 +66,7 @@ class PokedexRepository constructor(
                 fastMove = it.bestMoveset.fast,
                 chargedMove = it.bestMoveset.charge,
                 specialMove = it.bestMoveset.special,
+                weakToType = it.fight.weakToType
             )
         }.let {
             Log.d(TAG, "saveDataToDb: entity size: ${it.size}")

@@ -51,5 +51,8 @@ data class PokedexEntity(
     val chargedMove: String,
 
     @ColumnInfo(name = "specialMove")
-    val specialMove: String? = null
+    val specialMove: String? = null,
+
+    @ColumnInfo(name = "weakToType")
+    val weakToType: List<String>
 )

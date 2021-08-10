@@ -7,11 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import coil.load
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.local.PokedexEntity
 import com.karansyd4.pokedex.data.model.Result
 import com.karansyd4.pokedex.databinding.FragmentPokedexDetailBinding
+import com.karansyd4.pokedex.ui.pokedexlist.PokedexAdapter
+import com.karansyd4.pokedex.ui.pokedexlist.PokedexItemOffsetDecoration
+import com.karansyd4.pokedex.util.PokedexHelper
 import com.karansyd4.pokedex.util.Util
 import com.karansyd4.pokedex.util.Util.ZERO
 import com.karansyd4.pokedex.util.Util.getElementImageFromElementType
@@ -29,6 +33,8 @@ class PokedexDetailFragment : Fragment() {
     private lateinit var binding: FragmentPokedexDetailBinding
 
     private lateinit var viewModel: PokedexViewModel
+
+    private lateinit var elementTypeAdapter: ElementTypeGridAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         viewModel = ViewModelProvider(this).get(PokedexViewModel::class.java)
@@ -128,7 +134,7 @@ class PokedexDetailFragment : Fragment() {
             fastAttackLayout.txtTitle.text = getString(R.string.fast)
             fastAttackLayout.txtValue.text = data.fastMove
             chargedAttackLayout.titleValueLayout.visibility = View.VISIBLE
-            chargedAttackLayout.txtTitle.text = getString(R.string.charged)
+            chargedAttackLayout.txtTitle.text = getString(com.karansyd4.pokedex.R.string.charged)
             chargedAttackLayout.txtValue.text = data.chargedMove
             data.specialMove?.let {
                 specialAttackLayout.titleValueLayout.visibility = View.VISIBLE
@@ -137,6 +143,12 @@ class PokedexDetailFragment : Fragment() {
             }
         }
 
+        elementTypeAdapter = ElementTypeGridAdapter(data.weakToType)
+        rvWeakToType.apply {
+            adapter = elementTypeAdapter
+            layoutManager = GridLayoutManager(context, 2)
+            addItemDecoration(PokedexItemOffsetDecoration(itemOffset = R.dimen.default_offset))
+        }
     }
 
     override fun onDestroyView() {

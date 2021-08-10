@@ -190,10 +190,13 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <GridLayout
-                android:id="@+id/effectiveAgainstLayout"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvEffectiveToType"
                 style="@style/SectionLayout"
-                android:layout_marginTop="@dimen/spacing1x" />
+                android:layout_marginTop="@dimen/spacing1x"
+                tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/item_element_type"
+                tools:spanCount="2" />
 
             <TextView
                 android:id="@+id/txtWeakAgainstHeading"
@@ -204,10 +207,13 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <GridLayout
-                android:id="@+id/weakAgainstLayout"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWeakToType"
                 style="@style/SectionLayout"
-                android:layout_marginTop="@dimen/spacing1x" />
+                android:layout_marginTop="@dimen/spacing1x"
+                tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/item_element_type"
+                tools:spanCount="2" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
