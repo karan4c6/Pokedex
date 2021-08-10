@@ -3,14 +3,16 @@ A Pokedex app for Pokemon Go Players using Kotlin and Jetpack Components with MV
 
 GithubActions for CI / CD, to build apk automatically when a pull request is merged into the **main** branch
 
-**Libraries used and Architecture:**
+**Tech Stack:**
 <br>
 Kotlin <br>
 MVVM <br>
+Dagger, HILT for DI
 Coroutines, Flow, LiveData<br>
 Retrofit<br>
-Room<br>
-Coil<br>
+Room for Db with Coroutines<br>
+Coil for Image Loading<br>
+Github Actions for CI
 
 <br>
 <img src="/images/Pokedex_List.png" width="260">
