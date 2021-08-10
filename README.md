@@ -1,3 +1,5 @@
+![Workflow result](https://github.com/karan4c6/Pokedex/workflows/Check/badge.svg)
+
 # Pokedex
 A Pokedex app for Pokemon Go Players using Kotlin and Jetpack Components with MVVM Architecture
 
