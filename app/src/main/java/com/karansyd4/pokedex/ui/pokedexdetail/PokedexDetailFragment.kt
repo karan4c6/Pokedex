@@ -11,11 +11,11 @@ import androidx.recyclerview.widget.GridLayoutManager
 import coil.load
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.local.PokedexEntity
+import com.karansyd4.pokedex.data.model.PokemonElementType
 import com.karansyd4.pokedex.data.model.Result
+import com.karansyd4.pokedex.data.model.strongAgainstType
 import com.karansyd4.pokedex.databinding.FragmentPokedexDetailBinding
-import com.karansyd4.pokedex.ui.pokedexlist.PokedexAdapter
 import com.karansyd4.pokedex.ui.pokedexlist.PokedexItemOffsetDecoration
-import com.karansyd4.pokedex.util.PokedexHelper
 import com.karansyd4.pokedex.util.Util
 import com.karansyd4.pokedex.util.Util.ZERO
 import com.karansyd4.pokedex.util.Util.getElementImageFromElementType
@@ -134,7 +134,7 @@ class PokedexDetailFragment : Fragment() {
             fastAttackLayout.txtTitle.text = getString(R.string.fast)
             fastAttackLayout.txtValue.text = data.fastMove
             chargedAttackLayout.titleValueLayout.visibility = View.VISIBLE
-            chargedAttackLayout.txtTitle.text = getString(com.karansyd4.pokedex.R.string.charged)
+            chargedAttackLayout.txtTitle.text = getString(R.string.charged)
             chargedAttackLayout.txtValue.text = data.chargedMove
             data.specialMove?.let {
                 specialAttackLayout.titleValueLayout.visibility = View.VISIBLE
@@ -149,6 +149,18 @@ class PokedexDetailFragment : Fragment() {
             layoutManager = GridLayoutManager(context, 2)
             addItemDecoration(PokedexItemOffsetDecoration(itemOffset = R.dimen.default_offset))
         }
+
+        val strongSet = mutableSetOf<String>()
+        data.type.forEach {
+            strongSet.addAll(strongAgainstType(it))
+        }
+        elementTypeAdapter = ElementTypeGridAdapter(strongSet.toList())
+        rvEffectiveToType.apply {
+            adapter = elementTypeAdapter
+            layoutManager = GridLayoutManager(context, 2)
+            addItemDecoration(PokedexItemOffsetDecoration(itemOffset = R.dimen.default_offset))
+        }
+
     }
 
     override fun onDestroyView() {
