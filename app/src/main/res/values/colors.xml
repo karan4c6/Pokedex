@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="greenish">#68A890</color>
+    <color name="greenish_dark">#315648</color>
+
 </resources>

@@ -93,10 +93,12 @@ class PokedexDetailFragment : Fragment() {
         }
 
         ivPokemon.load(Util.getPokemonImageUrl(data.number.padPokedexNumber()))
+        ivPokemon.contentDescription = data.name
 
         txtName.text = data.name
         txtNumber.text = getString(R.string.pokedex_number_format, data.number)
         txtElementType.text = data.type.joinToString(" / ")
+        elementTypeLayout.contentDescription = txtElementType.text
 
         ivElementType1.load(getElementImageFromElementType(data.type.first()))
         if (data.type.size > 1) {
