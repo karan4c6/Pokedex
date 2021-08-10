@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.GridLayoutManager
 import coil.load
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.local.PokedexEntity
-import com.karansyd4.pokedex.data.model.PokemonElementType
 import com.karansyd4.pokedex.data.model.Result
 import com.karansyd4.pokedex.data.model.strongAgainstType
 import com.karansyd4.pokedex.databinding.FragmentPokedexDetailBinding
