@@ -14,6 +14,7 @@ import com.karansyd4.pokedex.data.model.Result
 import com.karansyd4.pokedex.databinding.FragmentPokedexDetailBinding
 import com.karansyd4.pokedex.util.Util
 import com.karansyd4.pokedex.util.Util.ZERO
+import com.karansyd4.pokedex.util.Util.getElementImageFromElementType
 import com.karansyd4.pokedex.util.ifLet
 import com.karansyd4.pokedex.util.padPokedexNumber
 import dagger.hilt.android.AndroidEntryPoint
@@ -90,7 +91,15 @@ class PokedexDetailFragment : Fragment() {
 
         txtName.text = data.name
         txtNumber.text = getString(R.string.pokedex_number_format, data.number)
-        txtType.text = data.type.joinToString(" / ")
+        txtElementType.text = data.type.joinToString(" / ")
+
+        ivElementType1.load(getElementImageFromElementType(data.type.first()))
+        if (data.type.size > 1) {
+            ivElementType2.visibility = View.VISIBLE
+            ivElementType2.load(getElementImageFromElementType(data.type[1]))
+        } else {
+            ivElementType2.visibility = View.GONE
+        }
 
         ifLet(data.evolveToName, data.evolveCandy) { (evolveToName, evolveCandy) ->
             evolveLayout.apply {

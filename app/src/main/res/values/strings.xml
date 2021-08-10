@@ -11,4 +11,6 @@
     <string name="special">Special</string>
     <string name="best_moveset">Best Moveset</string>
     <string name="evolution">Evolution</string>
+    <string name="effective_against">Effective against</string>
+    <string name="weak_against">Weak against</string>
 </resources>

@@ -10,5 +10,9 @@ object Util {
     const val ZERO = 0
 
     fun getPokemonImageUrl(pokedexNumber: String) =
-        "https://raw.githubusercontent.com/karan4c6/APIs/main/pokedex/images/$pokedexNumber.jpg"
+        "${API_BASE_URL}main/pokedex/images/$pokedexNumber.jpg"
+
+    fun getElementImageFromElementType(elementType: String) =
+        "${API_BASE_URL}main/pokedex/images/element/${elementType.lowercase()}.png"
+
 }

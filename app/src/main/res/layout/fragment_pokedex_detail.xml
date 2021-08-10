@@ -1,151 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/MatchParentLayout.ScreenPadded">
+    style="@style/MatchParentLayout">
 
-    <ImageView
-        android:id="@+id/ivPokemon"
-        style="@style/SectionLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/bulbasaur" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/MatchParentLayout.ScreenPadded"
+        android:paddingTop="@dimen/spacing1x"
+        android:paddingBottom="@dimen/spacing5x">
 
-    <TextView
-        android:id="@+id/txtName"
-        style="@style/WrapContentLayout"
-        android:layout_marginTop="@dimen/spacing2x"
-        android:textColor="@color/black"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivPokemon"
-        app:layout_goneMarginTop="@dimen/spacing3x"
-        tools:text="Rhyhorn" />
-
-    <TextView
-        android:id="@+id/txtNumber"
-        style="@style/WrapContentLayout"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtName"
-        tools:text="#43" />
-
-    <View
-        android:id="@+id/headDivider"
-        style="@style/DividerViewStyle"
-        android:layout_marginTop="@dimen/spacing2x"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
-
-    <TextView
-        android:id="@+id/txtType"
-        style="@style/WrapContentLayout"
-        android:layout_marginTop="@dimen/spacing2x"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headDivider"
-        tools:text="GRASS / POISON" />
-
-    <TextView
-        android:id="@+id/txtEvolution"
-        style="@style/SectionLayout"
-        android:layout_marginTop="@dimen/spacing3x"
-        android:text="@string/evolution"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtType" />
-
-    <include
-        android:id="@+id/evolveLayout"
-        style="@style/SectionLayout"
-        layout="@layout/item_title_value_horizontal"
-        android:layout_marginTop="@dimen/spacing3x"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEvolution"
-        tools:ignore="IncludeLayoutParam" />
-
-    <include
-        android:id="@+id/megaEvolveLayout"
-        style="@style/SectionLayout"
-        layout="@layout/item_title_value_horizontal"
-        android:layout_marginTop="@dimen/spacing2x"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/evolveLayout"
-        tools:ignore="IncludeLayoutParam" />
-
-    <include
-        android:id="@+id/buddyLayout"
-        style="@style/SectionLayout"
-        layout="@layout/item_title_value_horizontal"
-        android:layout_marginTop="@dimen/spacing2x"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/megaEvolveLayout"
-        tools:ignore="IncludeLayoutParam" />
-
-    <View
-        android:id="@+id/evolveDivider"
-        style="@style/DividerViewStyle"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buddyLayout" />
-
-    <TextView
-        android:id="@+id/txtBestMoveHeading"
-        style="@style/SectionLayout"
-        android:layout_marginTop="@dimen/spacing3x"
-        android:text="@string/best_moveset"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/evolveDivider" />
-
-    <LinearLayout
-        android:id="@+id/attacksLayout"
-        style="@style/SectionLayout"
-        android:orientation="vertical"
-        android:paddingTop="@dimen/spacing2x"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBestMoveHeading">
-
-        <include
-            android:id="@+id/fastAttackLayout"
+        <ImageView
+            android:id="@+id/ivPokemon"
             style="@style/SectionLayout"
-            layout="@layout/item_title_value_horizontal" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/bulbasaur" />
+
+        <TextView
+            android:id="@+id/txtName"
+            style="@style/WrapContentLayout"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPokemon"
+            app:layout_goneMarginTop="@dimen/spacing3x"
+            tools:text="Rhyhorn" />
+
+        <TextView
+            android:id="@+id/txtNumber"
+            style="@style/WrapContentLayout"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtName"
+            tools:text="#43" />
+
+        <LinearLayout
+            android:id="@+id/elementTypeLayout"
+            style="@style/SectionLayout"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNumber">
+
+            <LinearLayout
+                android:id="@+id/imageElementLayout"
+                style="@style/WrapContentLayout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivElementType1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    tools:src="@drawable/bulbasaur" />
+
+                <ImageView
+                    android:id="@+id/ivElementType2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="@dimen/spacing2x"
+                    android:visibility="gone"
+                    tools:src="@drawable/bulbasaur" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtElementType"
+                style="@style/SectionLayout"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/spacinghalfx"
+                android:textSize="16sp"
+                tools:text="GRASS / POISON" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtEvolution"
+            style="@style/SectionLayout"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:text="@string/evolution"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elementTypeLayout" />
 
         <include
-            android:id="@+id/chargedAttackLayout"
+            android:id="@+id/evolveLayout"
             style="@style/SectionLayout"
             layout="@layout/item_title_value_horizontal"
             android:layout_marginTop="@dimen/spacing2x"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/megaEvolveLayout"
+            app:layout_constraintTop_toBottomOf="@+id/txtEvolution"
             tools:ignore="IncludeLayoutParam" />
 
         <include
-            android:id="@+id/specialAttackLayout"
+            android:id="@+id/megaEvolveLayout"
             style="@style/SectionLayout"
             layout="@layout/item_title_value_horizontal"
-            android:layout_marginTop="@dimen/spacing2x"
+            android:layout_marginTop="@dimen/spacing1x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evolveLayout"
+            tools:ignore="IncludeLayoutParam" />
+
+        <include
+            android:id="@+id/buddyLayout"
+            style="@style/SectionLayout"
+            layout="@layout/item_title_value_horizontal"
+            android:layout_marginTop="@dimen/spacing1x"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/megaEvolveLayout"
             tools:ignore="IncludeLayoutParam" />
-    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/evolveDivider"
+            style="@style/DividerViewStyle"
+            android:layout_marginTop="@dimen/spacing2x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buddyLayout" />
+
+        <TextView
+            android:id="@+id/txtBestMoveHeading"
+            style="@style/SectionLayout"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:text="@string/best_moveset"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evolveDivider" />
+
+        <LinearLayout
+            android:id="@+id/attacksLayout"
+            style="@style/SectionLayout"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/spacing2x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBestMoveHeading">
+
+            <include
+                android:id="@+id/fastAttackLayout"
+                style="@style/SectionLayout"
+                layout="@layout/item_title_value_horizontal" />
+
+            <include
+                android:id="@+id/chargedAttackLayout"
+                style="@style/SectionLayout"
+                layout="@layout/item_title_value_horizontal"
+                android:layout_marginTop="@dimen/spacing1x"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/megaEvolveLayout"
+                tools:ignore="IncludeLayoutParam" />
+
+            <include
+                android:id="@+id/specialAttackLayout"
+                style="@style/SectionLayout"
+                layout="@layout/item_title_value_horizontal"
+                android:layout_marginTop="@dimen/spacing1x"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/megaEvolveLayout"
+                tools:ignore="IncludeLayoutParam" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weakStrongLayout"
+            style="@style/SectionLayout"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/attacksLayout">
+
+            <TextView
+                android:id="@+id/txtEffectiveAgainstHeading"
+                style="@style/SectionLayout"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:text="@string/effective_against"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:id="@+id/effectiveAgainstLayout"
+                style="@style/SectionLayout"
+                android:layout_marginTop="@dimen/spacing1x" />
+
+            <TextView
+                android:id="@+id/txtWeakAgainstHeading"
+                style="@style/SectionLayout"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:text="@string/weak_against"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:id="@+id/weakAgainstLayout"
+                style="@style/SectionLayout"
+                android:layout_marginTop="@dimen/spacing1x" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

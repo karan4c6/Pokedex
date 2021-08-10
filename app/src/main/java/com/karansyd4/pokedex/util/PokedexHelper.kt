@@ -7,4 +7,5 @@ object PokedexHelper {
 
     fun getPokedexCards(data: List<Pokedex>, cardClickListener: (PokedexCardVO) -> Unit) =
         data.map { PokedexCardVO(data = it, onClickListener = cardClickListener) }
+
 }
