@@ -13,8 +13,9 @@ Dagger, HILT for DI<br>
 Coroutines, Flow, LiveData<br>
 Retrofit<br>
 Room for Db with Coroutines<br>
+KotlinX Serialization<br>
 Coil for Image Loading<br>
-Github Actions for CI
+Github Actions for CI<br>
 
 <br>
 <img src="/images/Pokedex_List.png" width="260">
