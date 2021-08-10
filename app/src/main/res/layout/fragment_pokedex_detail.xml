@@ -52,10 +52,14 @@
         app:layout_constraintTop_toBottomOf="@+id/headDivider"
         tools:text="GRASS / POISON" />
 
-    <View
-        android:id="@+id/typeDivider"
-        style="@style/DividerViewStyle"
-        android:layout_marginTop="@dimen/spacing2x"
+    <TextView
+        android:id="@+id/txtEvolution"
+        style="@style/SectionLayout"
+        android:layout_marginTop="@dimen/spacing3x"
+        android:text="@string/evolution"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtType" />
@@ -67,7 +71,7 @@
         android:layout_marginTop="@dimen/spacing3x"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/typeDivider"
+        app:layout_constraintTop_toBottomOf="@+id/txtEvolution"
         tools:ignore="IncludeLayoutParam" />
 
     <include

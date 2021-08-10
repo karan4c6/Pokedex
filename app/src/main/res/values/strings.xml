@@ -10,4 +10,5 @@
     <string name="charged">Charged</string>
     <string name="special">Special</string>
     <string name="best_moveset">Best Moveset</string>
+    <string name="evolution">Evolution</string>
 </resources>
