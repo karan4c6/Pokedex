@@ -20,6 +20,6 @@ Github Actions for CI<br>
 <br>
 <img src="/images/Pokedex_List.png" width="260">
 <br>
-<img src="/images/Charander_Top.png" width="260">
-<br>
-<img src="/images/Charmander_Bottom.png" width="260">
+<img src="/images/Bulbasaur.png" width="260">
+<img src="/images/Charmander.png" width="260">
+<img src="/images/Squirtle.png" width="260">
