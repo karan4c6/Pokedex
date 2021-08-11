@@ -18,7 +18,7 @@ Coil for Image Loading<br>
 Github Actions for CI<br>
 
 <br>
-<img src="/images/Pokedex_List.png" width="260">
+<img src="/images/PokedexList.png" width="260">
 <br>
 <img src="/images/Bulbasaur.png" width="260">
 <img src="/images/Charmander.png" width="260">
