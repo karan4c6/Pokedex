@@ -56,6 +56,12 @@ android {
     packagingOptions {
         exclude 'META-INF/atomicfu.kotlin_module'
     }
+
+   testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
@@ -64,9 +70,11 @@ dependencies {
     implementation "androidx.core:core-ktx:$ktxVersion"
     implementation "androidx.appcompat:appcompat:$appCompatVersion"
 
+    // Testing Dependencies
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$junitExtVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+    testImplementation "org.robolectric:robolectric:$robolectricVersion"
 
     // Room components
     implementation "androidx.room:room-ktx:$roomVersion"
