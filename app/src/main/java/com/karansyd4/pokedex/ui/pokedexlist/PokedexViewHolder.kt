@@ -1,5 +1,6 @@
 package com.karansyd4.pokedex.ui.pokedexlist
 
+import androidx.annotation.VisibleForTesting
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.karansyd4.pokedex.databinding.ItemPokedexBinding
@@ -7,7 +8,7 @@ import com.karansyd4.pokedex.util.Util.getPokemonImageUrl
 import com.karansyd4.pokedex.util.clickWithDebounce
 import com.karansyd4.pokedex.util.padPokedexNumber
 
-class PokedexViewHolder(private val pokedexItemBinding: ItemPokedexBinding) :
+class PokedexViewHolder(@VisibleForTesting val pokedexItemBinding: ItemPokedexBinding) :
     RecyclerView.ViewHolder(pokedexItemBinding.root) {
 
     companion object {

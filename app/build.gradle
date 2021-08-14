@@ -60,6 +60,7 @@ android {
    testOptions {
         unitTests {
             includeAndroidResources = true
+            returnDefaultValues = true
         }
     }
 }
@@ -75,6 +76,10 @@ dependencies {
     androidTestImplementation "androidx.test.ext:junit:$junitExtVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
     testImplementation "org.robolectric:robolectric:$robolectricVersion"
+
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
+    testImplementation "io.mockk:mockk:1.10.0"
+
 
     // Room components
     implementation "androidx.room:room-ktx:$roomVersion"
@@ -123,7 +128,7 @@ dependencies {
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$navVersion"
 
     // Navigation Component - Testing Navigation
-    androidTestImplementation "androidx.navigation:navigation-testing:$navVersion"
+    //androidTestImplementation "androidx.navigation:navigation-testing:$navVersion"
 
     implementation platform('com.google.firebase:firebase-bom:28.3.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
@@ -140,5 +145,5 @@ dependencies {
     // Integration with ViewModels
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07"
     // UI Tests
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$composeVersion"
+   // androidTestImplementation "androidx.compose.ui:ui-test-junit4:$composeVersion"
 }
