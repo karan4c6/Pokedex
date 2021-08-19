@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -14,14 +16,20 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.karansyd4.pokedex.R
 import com.karansyd4.pokedex.data.model.Pokedex
+import com.karansyd4.pokedex.data.model.PokemonCardData
 import com.karansyd4.pokedex.data.model.Result
 import com.karansyd4.pokedex.databinding.FragmentPokedexListBinding
+import com.karansyd4.pokedex.theme.PokedexTheme
+import com.karansyd4.pokedex.ui.compose.library.PokedexGridList
 import com.karansyd4.pokedex.ui.pokedexdetail.PokedexEvent
 import com.karansyd4.pokedex.ui.pokedexdetail.PokedexViewModel
 import com.karansyd4.pokedex.util.PokedexHelper.getPokedexCards
 import com.karansyd4.pokedex.util.navigateWithAnim
+import com.karansyd4.pokedex.util.padPokedexNumber
 import dagger.hilt.android.AndroidEntryPoint
 
+@ExperimentalFoundationApi
+@ExperimentalMaterialApi
 @AndroidEntryPoint
 class PokedexListFragment : Fragment() {
 
@@ -45,7 +53,7 @@ class PokedexListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-       viewModel = ViewModelProvider(this).get(PokedexViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(PokedexViewModel::class.java)
         viewModel.loadData(PokedexEvent.GetPokedexEvent)
         observePokedexData()
     }
@@ -57,7 +65,8 @@ class PokedexListFragment : Fragment() {
                     displayLoading()
                 }
                 is Result.Success<List<Pokedex>> -> {
-                    displayData(result.data)
+//                    displayData(result.data)
+                    displayComposeView(result.data)
                 }
                 is Result.Error -> {
                     displayError(result.message)
@@ -65,6 +74,25 @@ class PokedexListFragment : Fragment() {
                 else -> displayError("Something went wrong")
             }
         })
+    }
+
+    @ExperimentalFoundationApi
+    @ExperimentalMaterialApi
+    private fun displayComposeView(data: List<Pokedex>) {
+        binding.progressBar.visibility = View.GONE
+        binding.composeListView.setContent {
+            PokedexTheme {
+                PokedexGridList(pokedexList = getPokedexList(data), onClick = ::onCardClick)
+            }
+        }
+    }
+
+    private fun onCardClick() {
+        Log.d(TAG, "onCardClick: navigate to Detail Screen")
+    }
+
+    private fun getPokedexList(data: List<Pokedex>): List<PokemonCardData> = data.map {
+        PokemonCardData(imageUrl = it.imageUrl, pokedexNumber = it.number.padPokedexNumber(), name = it.name)
     }
 
     private fun displayData(data: List<Pokedex>) {
