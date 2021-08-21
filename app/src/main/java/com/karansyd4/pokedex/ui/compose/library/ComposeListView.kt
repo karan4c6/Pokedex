@@ -1,6 +1,5 @@
 package com.karansyd4.pokedex.ui.compose.library
 
-import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
