@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/pokedexListFragment">
+    app:startDestination="@id/playgroundFragment">
 
     <fragment
         android:id="@+id/pokedexListFragment"
@@ -24,5 +24,10 @@
             android:defaultValue="0"
             app:argType="integer" />
     </fragment>
+
+    <fragment
+        android:id="@+id/playgroundFragment"
+        android:name="com.karansyd4.pokedex.ui.playground.PlaygroundFragment"
+        tools:layout="@layout/fragment_playground_layout" />
 
 </navigation>
