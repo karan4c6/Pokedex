@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.VisibleForTesting
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -47,9 +48,10 @@ class PlaygroundFragment : Fragment() {
 @Composable
 fun ComposeUIScreen() {
     MaterialTheme {
-        Text(text = "Compose UI", modifier = Modifier.padding(16.dp))
-
-        LowActionButton(text = "Low Emphasis Button", onClick = ::onclick)
+        Column {
+            Text(text = "Compose UI", modifier = Modifier.padding(16.dp))
+            LowActionButton(text = "Low Emphasis Button", onClick = ::onclick)
+        }
     }
 }
 

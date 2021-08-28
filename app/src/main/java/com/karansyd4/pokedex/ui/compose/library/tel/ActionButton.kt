@@ -103,3 +103,11 @@ fun PreviewActionButton() {
         LowActionButton(text = "Action Button") {}
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewDarkActionButton() {
+    PokedexTheme(darkTheme = true) {
+        LowActionButton(text = "Action Button") {}
+    }
+}
