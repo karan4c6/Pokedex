@@ -9,6 +9,11 @@
     android:padding="8dp"
     tools:context=".ui.pokedexlist.PokedexListFragment">
 
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/composeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pokemonList"
         style="@style/SectionLayout"
@@ -27,6 +32,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
