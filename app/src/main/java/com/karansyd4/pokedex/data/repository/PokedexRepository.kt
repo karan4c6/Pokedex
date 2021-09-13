@@ -11,8 +11,9 @@ import com.karansyd4.pokedex.data.remote.PokedexService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
-class PokedexRepository constructor(
+class PokedexRepository @Inject constructor(
     private val pokedexDAO: PokedexDAO,
     private val pokedexService: PokedexService
 ) : Repository {
