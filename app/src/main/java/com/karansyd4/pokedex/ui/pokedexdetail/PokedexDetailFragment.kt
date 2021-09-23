@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import coil.load
@@ -31,12 +32,12 @@ class PokedexDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentPokedexDetailBinding
 
-    private lateinit var viewModel: PokedexViewModel
+    private val viewModel: PokedexViewModel by viewModels()
 
     private lateinit var elementTypeAdapter: ElementTypeGridAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        viewModel = ViewModelProvider(this).get(PokedexViewModel::class.java)
+        //viewModel = ViewModelProvider(this).get(PokedexViewModel::class.java)
         viewModel.loadData(
             PokedexEvent.GetPokedexByNumberEvent(
                 arguments?.getInt(getString(R.string.arg_pokedex_number)) ?: ZERO
